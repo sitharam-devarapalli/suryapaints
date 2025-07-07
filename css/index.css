@@ -1,0 +1,2806 @@
+:root {
+    --font-family-sans-serif: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --font-family-monospace: 'Fira Code', 'Courier New', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    line-height: 1.6;
+    color: #333;
+    /* Optional: Sets a slightly lighter text color */
+}
+
+code,
+pre {
+    font-family: var(--font-family-monospace);
+}
+
+/* Top Section Styles */
+.paintheaders-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px 1px;
+    background: #f9f3e7;
+    flex-wrap: wrap;
+}
+
+.paintheaders-middle {
+    display: flex;
+    justify-content: center;
+}
+
+.paintheaders-top img {
+    display: block;
+    max-height: 90px;
+    object-fit: contain;
+}
+
+.logo-sp {
+    padding: 15px;
+}
+
+.paintheaders-middle img:hover {
+    background: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.paintheaders-phone {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.paintheaders-social a {
+    color: #000;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.paintheaders-social a:hover {
+    color: #8a259b;
+}
+
+/* Bottom Section Styles */
+.paintheaders-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background: #fff;
+}
+
+.paintheaders-logo-1 img {
+    width: 160px;
+}
+
+/* Navbar Styles */
+.paintheaders-menu .nav-link {
+    color: #827979;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.paintheaders-menu .nav-link:hover {
+    color: #022179;
+}
+
+.paintheaders-menu .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to left, #8a259b, #022179, #8a259b);
+    transition: width 0.3s;
+    bottom: 2px;
+    left: 5px
+}
+
+.paintheaders-menu .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Buttons */
+.paintheaders-button {
+    background: linear-gradient(to right, #8a259b, #022179, #8a259b);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none !important;
+    text-decoration-color: transparent !important;
+}
+
+.paintheaders-button:hover {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 8px 18px;
+    color: #000;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.paintheaders-menu {
+    display: flex;
+    /* gap: 10px; */
+}
+
+.paintheaders-social a {
+    color: #000;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.paintheaders-social a:hover {
+    color: #8a259b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .paintheaders-bottom {
+        padding: 15px 20px;
+    }
+
+    .paintheaders-menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .paintheaders-menu .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .paintheaders-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .d-flex.gap-2 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .paintheaders-middle img {
+        width: 96px;
+        padding: 9px;
+    }
+
+    .paintheaders-top {
+        padding: 10px;
+    }
+
+    .paintheaders-middle {
+        gap: 0px;
+    }
+
+    .paintheaders-logo-1 img {
+        width: 100px;
+    }
+}
+
+
+/* paint home sldier css  */
+/* PaintSlider Styling */
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 5%;
+    top: 40%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: start;
+}
+
+.carousel-caption h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.paintslider-carousel {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Button with Arrow Inside */
+.paintslider-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #8a259b, #022179);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.paintslider-btn i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Arrow Animation on Hover */
+.paintslider-btn:hover {
+    background: #fff;
+    color: #022179;
+    border: 2px solid #022179;
+}
+
+.paintslider-btn:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 992px) {
+
+    /* Tablets */
+    .carousel-caption {
+        top: 30%;
+        left: 10%;
+        right: 10%;
+        text-align: start;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .paintslider-carousel {
+        height: 400px;
+    }
+
+    .paintslider-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile */
+    .carousel-caption {
+        top: 25%;
+        left: 5%;
+        right: 5%;
+        text-align: start;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .paintslider-carousel {
+        height: 350px;
+    }
+
+    .paintslider-btn {
+        padding: 7px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Small Mobile */
+    .carousel-caption {
+        top: 20%;
+        left: 5%;
+        right: 5%;
+        text-align: start;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    .paintslider-carousel {
+        height: 225px;
+    }
+
+    .paintslider-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* paint home category */
+.painthomeservices-container {
+    background: #fff;
+}
+
+.painthomeservices-title {
+    font-size: 54px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+    ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.painthomeservices-left1 {
+    padding: 70px 0px;
+}
+
+.painthomeservices-desc {
+    font-size: 18px;
+    color: #555;
+    max-width: 500px;
+}
+
+.painthomeservices-card {
+    background: #fdf6ed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.painthomeservices-card img {
+    width: 80px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.painthomeservices-card h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.painthomeservices-arrow {
+    position: absolute;
+    right: 15px;
+    font-size: 32px;
+    color: #000;
+    transition: 0.3s;
+    transform: rotate(-45deg);
+}
+
+.painthomeservices-card:hover {
+    background: #f3eadb;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 991px) {
+
+    /* Tablets */
+    .painthomeservices-left1 {
+        padding: 0px 0px;
+    }
+
+    .painthomeservices-title {
+        font-size: 44px;
+    }
+
+    .painthomeservices-desc {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .painthomeservices-card {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .painthomeservices-card img {
+        width: 70px;
+        height: 90px;
+    }
+
+    .painthomeservices-arrow {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Mobile */
+    .painthomeservices-left1 {
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+    .painthomeservices-title {
+        font-size: 36px;
+    }
+
+    .painthomeservices-desc {
+        font-size: 16px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .painthomeservices-card {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .painthomeservices-card img {
+        width: 65px;
+        height: 75px;
+    }
+
+    .painthomeservices-arrow {
+        font-size: 24px;
+        right: 10px;
+    }
+}
+
+
+/* Home paint About Section css */
+.homeabout-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.homeabout-content {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.homeabout-content h2 {
+    font-size: 32px;
+    color: #000;
+}
+
+.homeabout-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.homeabout-btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #8a259b, #022179);
+}
+
+.homeabout-btn i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.homeabout-btn:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.half-black {
+    color: black;
+}
+
+.half-gradient {
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+}
+
+.homeabout-btn:hover i {
+    transform: translateX(5px);
+}
+
+.homeabout-about-small {
+    font-size: 17px;
+    color: #022179;
+    text-transform: uppercase;
+}
+
+/* Image Section */
+.homeabout-image {
+    width: 50%;
+    text-align: right;
+}
+
+.homeabout-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .homeabout-container {
+        flex-direction: column;
+        text-align: start;
+        padding: 20px;
+    }
+
+    .homeabout-content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .homeabout-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .homeabout-btn {
+        justify-content: center;
+        font-size: 14px;
+        padding: 5px 13px;
+    }
+
+    .homeabout-about-small {
+        font-size: 14px;
+        color: #837a7a;
+        margin-top: 0px;
+    }
+
+    .homeabout-content h2 {
+        font-size: 21px;
+        color: #000;
+    }
+
+    .homeabout-content p {
+        font-size: 12px;
+        color: #666;
+    }
+
+    .latestprojects-container {
+        padding: 20px 15px;
+    }
+
+    .half-gradient {
+        font-size: 21px;
+
+    }
+}
+
+/* appointment form Styling css */
+.paintappointment {
+    background-color: #3F5E8C;
+    color: white;
+    padding: 40px;
+}
+
+.paintappointment h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+.paintappointment p {
+    font-size: 16px;
+}
+
+.paintappointment input,
+.paintappointment textarea {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.paintappointment input:focus,
+.paintappointment textarea:focus {
+    outline: none;
+    border: 2px solid #022179;
+}
+
+.btn-appointment {
+    background: linear-gradient(to right, #8a259b, #022179);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px 25px 25px 25px;
+    border: none;
+}
+
+.btn-appointment:hover {
+    background: none;
+    padding: 8px 18px;
+    border: 2px solid #fff;
+}
+
+.paintappointment-input {
+    text-align: start;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .paintappointment {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .paintappointment h2 {
+        font-size: 36px;
+    }
+
+    .btn-appointment {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .paintappointment h2 {
+        font-size: 28px;
+        text-align: start;
+    }
+
+    .paintappointment p {
+        font-size: 14px;
+        text-align: start;
+    }
+
+    .paintappointment input {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .paintappointment {
+        padding: 20px;
+    }
+
+    .paintappointment h2 {
+        font-size: 24px;
+    }
+
+    .paintappointment p {
+        font-size: 12px;
+    }
+
+    .btn-appointment {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* footer css  */
+/* Footer Styling */
+.painthomefooter-main {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Top Footer */
+.painthomefooter-top {
+    background: linear-gradient(to right, #0a1b3a, #203c5c);
+    padding: 15px 50px;
+}
+
+.painthomefooter-logo img {
+    width: 130px;
+}
+
+.painthomefooter-logo span {
+    font-size: 14px;
+    display: block;
+}
+
+.painthomefooter-social a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.painthomefooter-social a:hover {
+    color: #000;
+}
+
+.painthomefooter-contact {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #fff;
+}
+
+.painthomefooter-contact i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.painthomefooter-contact strong {
+    font-size: 16px;
+}
+
+/* Middle Footer */
+.painthomefooter-middle {
+    padding: 30px 50px;
+    background-color: #0d1b2a;
+}
+
+.painthomefooter-middle h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.painthomefooter-middle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.painthomefooter-middle ul li {
+    margin-bottom: 8px;
+}
+
+.painthomefooter-middle ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.painthomefooter-middle ul li a:hover {
+    color: #f1b800;
+}
+
+/* Bottom Footer */
+.painthomefooter-bottom {
+    padding: 20px 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    background: #0d1b2a;
+}
+
+.painthomefooter-bottom-1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.painthomefooter-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.painthomefooter-bottom a {
+    color: #f1b800;
+    text-decoration: none;
+}
+
+.painthomefooter-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Payment Logos */
+.painthomefooter-payment {
+    /* margin-top: 15px; */
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.painthomefooter-payment img {
+    height: 25px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    .painthomefooter-top {
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .painthomefooter-contact {
+        justify-content: center;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .painthomefooter-middle {
+        padding: 20px 30px;
+        text-align: start;
+    }
+
+    .painthomefooter-bottom {
+        padding: 20px 30px;
+    }
+
+    .painthomefooter-bottom-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .painthomefooter-payment {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .painthomefooter-contact strong {
+        font-size: 10px;
+    }
+}
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+    .painthomefooter-top {
+        padding: 15px 20px;
+    }
+
+    .painthomefooter-contact strong {
+        font-size: 10px;
+    }
+
+    .painthomefooter-logo img {
+        width: 110px;
+    }
+
+    .painthomefooter-contact {
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .painthomefooter-middle {
+        padding: 20px;
+    }
+
+    .painthomefooter-middle h5 {
+        margin-top: 20px;
+    }
+
+    .painthomefooter-bottom {
+        padding: 20px;
+    }
+
+    .painthomefooter-payment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .painthomefooter-payment img {
+        height: 20px;
+    }
+
+    .paintheaders-social {
+        display: none;
+    }
+
+    .paintheaders-phone {
+        display: none;
+    }
+
+    .paintheaders-top {
+        padding: 10px;
+        justify-content: center;
+    }
+}
+
+/* home paint brand css  */
+.painthomebrands-main1 {
+    background: #ece5d7;
+}
+
+.painthomebrands-slider {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.painthomebrands-view {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.painthomebrands-view:hover {
+    color: #022179;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.painthomebrands-track {
+    display: flex;
+    width: calc(200px * 10);
+    /* Adjust width based on number of logos */
+    animation: painthomebrandsScroll 12s linear infinite;
+}
+
+.painthomebrands-item {
+    min-width: 200px;
+    margin: 0 10px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.painthomebrands-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Continuous Scrolling Animation */
+@keyframes painthomebrandsScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .painthomebrands-track {
+        animation-duration: 15s;
+    }
+}
+
+@media (max-width: 480px) {
+    .painthomebrands-item {
+        min-width: 150px;
+    }
+}
+
+
+/* content and image css  */
+.painthomepic1-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.painthomepic1-main img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.painthomepic1-title01 {
+    font-size: 24px;
+}
+
+.painthomepic1-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #8a259b, #022179);
+    font-size: 16px;
+}
+
+.painthomepic1-btn:hover {
+    padding: 8px 13px;
+    border: 2px solid #000;
+    color: #000;
+    background: #fff;
+
+}
+
+.painthomepic1-para {
+    font-size: 18px;
+}
+
+/* Gradient Text */
+.text-gradient {
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 54px !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .text-gradient {
+        font-size: 40px !important;
+    }
+
+    .painthomepic1-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .painthomepic1-main img {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-gradient {
+        font-size: 36px !important;
+    }
+
+    .painthomepic1-title01 {
+        font-size: 20px;
+    }
+
+    .painthomepic1-para {
+        font-size: 16px;
+    }
+
+    .painthomepic1-btn {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .painthomepic1-main img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-gradient {
+        font-size: 28px !important;
+    }
+
+    .painthomepic1-title01 {
+        font-size: 18px;
+    }
+
+    .painthomepic1-para {
+        font-size: 14px;
+    }
+
+    .painthomepic1-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .painthomepic1-main img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .px-5 {
+        padding: 15px !important;
+    }
+}
+
+.painthomewhatsup-call,
+.painthomewhatsup-whatsapp {
+    background: #f9f3e7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+    /* Ensures both take full height */
+    display: flex;
+    align-items: center;
+}
+
+.painthomewhatsup-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.painthomewhatsup-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #4b4747;
+    margin-bottom: 5px;
+}
+
+.painthomewhatsup-number {
+    font-size: 34px;
+    font-family: serif;
+    color: #000;
+    margin: 0;
+}
+
+.painthomewhatsup-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.painthomewhatsup-button:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.painthomewhatsup-alternate {
+    font-size: 14px;
+    color: #555;
+}
+
+.painthomewhatsup-alternate span {
+    font-weight: bold;
+    color: #000;
+}
+
+.painthomewhatsup-two1 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .painthomewhatsup-two1 {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .painthomewhatsup-call,
+    .painthomewhatsup-whatsapp {
+        width: 100%;
+    }
+
+    .painthomewhatsup-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .painthomewhatsup-title {
+        font-size: 22px;
+    }
+
+    .painthomewhatsup-number {
+        font-size: 28px;
+    }
+
+    .painthomewhatsup-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 767px) {
+    .painthomewhatsup-two1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .painthomewhatsup-call,
+    .painthomewhatsup-whatsapp {
+        width: 100%;
+    }
+
+    .painthomewhatsup-title {
+        font-size: 18px;
+    }
+
+    .painthomewhatsup-number {
+        font-size: 20px;
+    }
+
+    .painthomewhatsup-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* gallery section css  */
+.painthomegalleye-container {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    /* Ensures same height */
+}
+
+.painthomegalleye-left {
+    flex: 1;
+    height: 750px;
+    /* Fixed height to match right side */
+    position: relative;
+}
+
+.painthomegalleye-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.painthomegalleye-top {
+    height: 50%;
+    /* Takes half the height */
+}
+
+.painthomegalleye-bottom {
+    display: flex;
+    gap: 10px;
+    height: 50%;
+    /* Two bottom images share half height */
+}
+
+.painthomegalleye-bottom .painthomegalleye-box {
+    flex: 1;
+}
+
+/* Image Styling */
+.painthomegalleye-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.painthomegalleye-box img.object-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.painthomegalleye-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.painthomegalleye-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* 🔹 Responsive Fixes */
+@media (max-width: 991px) {
+    .painthomegalleye-left {
+        height: 600px;
+    }
+
+    .painthomegalleye-right {
+        height: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .painthomegalleye-container {
+        flex-direction: column;
+    }
+
+    .painthomegalleye-left,
+    .painthomegalleye-right {
+        height: auto;
+    }
+
+    .painthomegalleye-bottom {
+        flex-direction: column;
+    }
+
+    .row.g-3.align-items-stretch {
+        flex-direction: column;
+    }
+}
+
+/* Counter Section */
+.homecounter-container {
+    background: url('../img/homepage-count-banner.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Dark Overlay */
+.homecounter-overlay {
+    padding: 20px 50px;
+}
+
+/* Counter Grid */
+.homecounter-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/* Counter Box */
+.homecounter-box {
+    width: 200px;
+    text-align: center;
+}
+
+/* Counter Icon */
+.homecounter-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg, #eeca00 0%, #FFA500 100%);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+
+.homecounter-box:hover .homecounter-icon {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #eeca00 0%, #FFA500 100%);
+    color: #000;
+}
+
+/* Counter Number */
+.homecounter-box h2 {
+    font-size: 40px;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Counter Label */
+.homecounter-box p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 468px) {
+    .homecounter-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .homecounter-box h2 {
+        font-size: 23px;
+        margin: 1px 0 0px;
+    }
+
+    .homecounter-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .homecounter-box p {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* FAQs CSS */
+.painthomefaqs-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.painthomefaqs-item {
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 10px;
+}
+
+.painthomefaqs-question {
+    font-weight: 800;
+    font-size: 18px;
+    background: none !important;
+    border: none;
+    box-shadow: none;
+    color: #000 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px 0px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.accordion-button:not(.collapsed) {
+    background: none !important;
+    color: #000 !important;
+}
+
+.painthomefaqs-question:hover {
+    color: inherit;
+}
+
+.painthomefaqs-answer {
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0px;
+}
+
+.faq-icon {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.icon {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) .icon {
+    transform: rotate(180deg);
+}
+
+/* Responsive FAQs - Mobile & Tablet Adjustments */
+@media (max-width: 768px) {
+    .painthomefaqs-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .painthomefaqs-question {
+        font-size: 16px;
+        line-height: 30px;
+        padding: 10px 0;
+    }
+
+    .painthomefaqs-answer {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .faq-icon,
+    .icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .painthomefaqs-title {
+        font-size: 24px;
+    }
+
+    .painthomefaqs-question {
+        font-size: 14px;
+        text-align: start;
+    }
+
+    .painthomefaqs-answer {
+        font-size: 12px;
+    }
+
+    .faq-icon,
+    .icon {
+        font-size: 18px;
+    }
+
+    .p-5 {
+        padding: 20px !important;
+    }
+}
+
+
+/* Our Team Title */
+.painthometeam-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.painthometeam-card {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px 0px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.painthometeam-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, filter 0.5s ease;
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+}
+
+.painthometeam-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    transition: background 0.6s ease-in-out;
+}
+
+.painthometeam-info {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    text-align: start;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+.painthometeam-info h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.painthometeam-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.painthometeam-card:hover {
+    transform: scale(1.03);
+}
+
+.painthometeam-card:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+    background: linear-gradient(45deg, #8a2be2, #ff8c00);
+}
+
+
+.painthometeam-card:hover .painthometeam-info {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .painthometeam-title {
+        font-size: 28px;
+    }
+
+    .painthometeam-card {
+        height: 300px;
+    }
+
+    .painthometeam-info h5 {
+        font-size: 16px;
+    }
+
+    .painthometeam-info p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .painthometeam-card {
+        height: 260px;
+        border-radius: 15px;
+    }
+
+    .painthometeam-info {
+        padding: 8px 12px;
+    }
+}
+
+
+
+.collab-heading {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.collab-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* about us css  */
+.painthomeabout-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.painthomeabout-para {
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .painthomeabout-para {
+        font-size: 14px;
+        text-align: justify;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .painthomeabout-para {
+        font-size: 12px;
+        text-align: justify;
+    }
+}
+
+
+/* contact us css  */
+/* Background for the whole section */
+.painthomecontact-container {
+    background: #ece5d7;
+    padding: 60px 0;
+}
+
+/* Title */
+.painthomecontact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    text-align: left;
+}
+
+/* Left Side Link */
+.painthomecontact-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.painthomecontact-link:hover {
+    text-decoration: underline;
+}
+
+/* Right Side Form */
+.painthomecontact-form {
+    max-width: 450px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Input Fields */
+.painthomecontact-form input,
+.painthomecontact-form textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+/* Submit Button */
+.painthomecontact-bnt1 {
+    background: linear-gradient(to left, #8a259b, #022179, #8a259b);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.painthomecontact-form button:hover {
+    background: linear-gradient(to left, #022179, #8a259b);
+    color: #f4f4f4;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .painthomecontact-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .painthomecontact-form {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .painthomecontact-container {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .painthomecontact-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .painthomecontact-form {
+        padding: 20px;
+    }
+
+    .painthomecontact-container {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .painthomecontact-title {
+        font-size: 26px;
+    }
+
+    .painthomecontact-container {
+        padding: 20px 10px;
+    }
+}
+
+
+/* banner css  */
+/* Banner Styling */
+.painthomebanner {
+    width: 100%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+}
+
+.painthomebanner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form Wrapper */
+.painthomebanner-form-wrapper {
+    position: absolute;
+    bottom: 10px;
+    right: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Form Styling */
+.painthomebanner-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.painthomebanner-bnt12 {
+    background: linear-gradient(to left, #8a259b, #022179, #8a259b);
+    color: #fff;
+}
+
+.painthomebanner-bnt12:hover {
+    background: linear-gradient(to left, #8a259b, #8a259b, #022179);
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .painthomebanner {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .painthomebanner-form-wrapper {
+        position: static;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .painthomebanner-form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .painthomebanner-form {
+        padding: 15px;
+    }
+
+    .painthomebanner h4 {
+        font-size: 18px;
+    }
+}
+
+
+
+/* sales page image section css  */
+.painthomesalespage-banner {
+    height: 500px;
+    /* Fixed height */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.painthomesalespage-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.painthomesalespage-half {
+    height: 240px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.painthomesalespage-half img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .painthomesalespage-banner {
+        height: auto;
+    }
+
+    .painthomesalespage-banner img {
+        height: auto;
+    }
+
+    .painthomesalespage-half {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .painthomesalespage-half img {
+        height: 100%;
+    }
+
+    .painthomesalespage-right {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+/* Mobile - Stack all images vertically */
+@media (max-width: 768px) {
+    .painthomesalespage-right {
+        flex-direction: column;
+    }
+
+    .painthomesalespage-half {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .painthomesalespage-banner,
+    .painthomesalespage-banner img {
+        height: auto;
+    }
+}
+
+
+
+
+
+/* home page sales css  */
+/* Gradient Title */
+.trending-title {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff8c00, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Gradient Button */
+.trending-btn {
+    padding: 6px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, #8a259b, #022179);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.trending-btn:hover {
+    background: linear-gradient(to right, #022179, #8a259b);
+}
+
+/* Product Card Styling */
+.paintproduct-card {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Top Section - Title & Button */
+.paintproduct-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f8f2f2;
+    margin-bottom: 20px;
+}
+
+
+.paintproduct-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image */
+.paintproduct-img img {
+    width: 50%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Product Info */
+.paintproduct-info h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.paintproduct-info .price {
+    font-size: 16px;
+    color: #555;
+}
+
+.paintproduct-info .price del {
+    color: red;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .paintproduct-img img {
+        height: 150px;
+    }
+}
+
+
+/* Review Section css */
+.painthomereview-section {
+    padding: 40px 50px;
+    background: #f9f3e7;
+}
+
+.painthomereview-left {
+    text-align: left;
+    padding: 25px 10px;
+}
+
+.painthomereview-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Review Card */
+.painthomereview-card {
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 175px;
+    border: 1px solid #cdc4c4;
+}
+
+.painthomereview-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.painthomereview-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.painthomereview-name {
+    font-weight: bold;
+}
+
+.painthomereview-text {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Responsive Carousel Behavior */
+@media (max-width: 767px) {
+    .painthomereview-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* all products in sales page  */
+.painhomesales1-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.painhomesales1-card {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.painhomesales1-card:hover {
+    transform: translateY(-5px);
+}
+
+.painhomesales1-img img {
+    width: 50%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.painhomesales1-info h4 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+}
+
+.painhomesales1-info .price {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.painhomesales1-view-btn {
+    background: linear-gradient(to left, #8a259b, #022179, #8a259b);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.painhomesales1-view-btn:hover {
+    background: linear-gradient(to left, #8a259b, #8a259b, #022179);
+}
+
+.painhomesales1-less-btn {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.painhomesales1-less-btn:hover {
+    background: linear-gradient(to right, #2575fc, #450a85);
+}
+
+@media (max-width: 992px) {
+    .painhomesales1-card {
+        padding: 15px;
+    }
+
+    .painhomesales1-info h4 {
+        font-size: 16px;
+    }
+
+    .painhomesales1-img img {
+        width: 60%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .painhomesales1-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .painhomesales1-card {
+        padding: 10px;
+    }
+
+    .painhomesales1-img img {
+        width: 38%;
+        height: 140px;
+    }
+
+    .painhomesales1-info h4 {
+        font-size: 15px;
+    }
+
+    .painhomesales1-info .price {
+        font-size: 14px;
+    }
+
+    .painhomesales1-view-btn,
+    .painhomesales1-less-btn {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .painhomesales1-img img {
+        width: 32%;
+        height: 130px;
+    }
+
+    .painhomesales1-card {
+        text-align: center;
+    }
+
+    .painhomesales1-info h4 {
+        font-size: 14px;
+    }
+
+    .painhomesales1-info .price {
+        font-size: 13px;
+    }
+
+    .painhomesales1-view-btn,
+    .painhomesales1-less-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+
+/* brand page logos css  */
+.painthomebrands-section {
+    padding: 40px 0;
+}
+
+.painthomebrands-logo-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none !important;
+    padding: 10px;
+    background: #fff;
+}
+
+.painthomebrands-logo {
+    width: 160px;
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.painthomebrands-logo-container:hover .painthomebrands-logo {
+    transform: scale(1.05);
+}
+
+.painthomebrands-logo-container i.fa-chevron-right {
+    font-size: 20px;
+    color: #333;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+    /* ✅ Add space from logo */
+}
+
+.painthomebrands-logo-container:hover i.fa-chevron-right {
+    transform: translateX(5px);
+}
+
+.product-page {
+    display: none;
+}
+
+.painthomeproduct-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.painthomeproduct1-img {
+    width: 90px;
+    height: 100px;
+}
+
+.painthomeproduct-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.painthomeproduct-name {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    text-align: start;
+    gap: 10px;
+}
+
+.painthomeproduct1-para {
+    text-align: start;
+    font-size: 12px;
+    color: #000;
+    text-transform: lowercase;
+}
+
+.whatsapp-icon {
+    width: 22px !important;
+    height: 22px !important;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.back-btn {
+    background: linear-gradient(to left, #8a259b, #022179, #752383);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    background: linear-gradient(45deg, #8a259b, #022179);
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+    .painthomeproduct-name {
+        font-size: 11px;
+    }
+
+    .painthomeproduct1-para {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .painthomebrands-logo-container {
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .painthomebrands-logo {
+        max-width: 110px;
+    }
+
+    .painthomebrands-logo-container i.fa-chevron-right {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .painthomeproduct-name {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .painthomeproduct1-para {
+        font-size: 13px;
+    }
+
+    .p-5 {
+        padding: 20px !important;
+    }
+
+    .painthomeproduct-card {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .painthomebrands-logo {
+        max-width: 100px;
+    }
+
+    .painthomeproduct1-img {
+        max-width: 120px !important;
+        height: 140px !important;
+    }
+
+    .back-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .painthomeproduct1-para {
+        font-size: 12px;
+    }
+
+    .painthomeproduct-card {
+        height: 300px;
+    }
+}
+
+
+/* branche's section css  */
+.painthomebranches-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.painthomebranches-title {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.painthomebranches-description {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.painthomebranches-description-1 {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.painthomebranches-btn {
+    font-weight: 600;
+    color: #8a259b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.painthomebranches-btn:hover {
+    color: #022179;
+    text-decoration: underline;
+}
+
+.painthomebranches-section {
+    background-color: #f2e6fb;
+}
+
+.painthomebranches-step {
+    padding: 0px 25px;
+}
+
+@media (max-width: 991.98px) {
+    .painthomebranches-step {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .painthomebranches-step {
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .painthomebranches-numword {
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .painthomebranches-description,
+    .painthomebranches-description-1 {
+        text-align: center;
+    }
+
+    .painthomebranches-btn {
+        justify-content: center;
+    }
+}
+
+/* upcomming branch's section css  */
+.branch-banner {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.branch-banner:hover {
+    transform: scale(1.02);
+}
+
+
+.whychooseus-banner {
+    width: 100%;
+    height: 300px;
+    background: url('../img/h2-img-2.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); */
+}
+
+.whychooseus-overlay {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.whychooseus-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    padding: 0px 250px 0px;
+}
+
+.whychooseus-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #8a259b, #022179, #8a259b);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whychooseus-btn:hover {
+    background: linear-gradient(to right, #8a259b, #022179);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .whychooseus-heading {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    .whychooseus-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .contactpage-box {
+        max-width: 400px;
+
+    }
+
+    .footer_bottom_content {
+        font-size: 12px;
+    }
+
+    .Digisphere {
+        font-size: 14px;
+    }
+}
+
+.logo-infa {
+    width: 100px;
+    padding: 18px;
+    margin-top: 12px;
+}
+
+
+
+
+/* 🌐 Default desktop styles */
+.suryapaintproductpage-banner-section {
+    cursor: pointer;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.innerlogo-brand-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.innerlogo-brand-logo {
+    max-height: 80px;
+    object-fit: contain;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .suryapaintproductpage-banner-section {
+        height: 160px;
+        padding: 10px;
+    }
+
+    .innerlogo-brand-title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .innerlogo-brand-logo {
+        max-height: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .suryapaintproductpage-banner-section {
+        height: 320px;
+        padding: 20px;
+    }
+
+    .innerlogo-brand-title {
+        font-size: 1.5rem;
+    }
+
+    .innerlogo-brand-logo {
+        max-height: 70px;
+    }
+}
+
+
+/* catalog section css  */
+.catalog-section {
+    padding: 30px 50px;
+}
+
+.catalog-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.catalog-pic1 {
+    width: 100%;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.catalog-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.catalog-card:hover {
+    transform: translateY(-10px);
+}
+
+.catalog-icon {
+    font-size: 50px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.catalog-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #217dbb;
+}
+
+@media (max-width: 767px) {
+    .catalog-section {
+        padding: 25px 20px;
+    }
+
+    .catalog-title {
+        font-size: 1.7rem;
+    }
+
+    .catalog-card {
+        padding: 15px;
+    }
+
+    .catalog-icon {
+        font-size: 40px;
+    }
+
+    .download-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .catalog-pic1 {
+        height: 150px;
+    }
+}
+
+/* Extra small devices (phones, < 576px) */
+@media (max-width: 575px) {
+    .catalog-section {
+        padding: 20px 15px;
+    }
+
+    .catalog-title {
+        font-size: 1.5rem;
+    }
+
+    .catalog-icon {
+        font-size: 36px;
+    }
+
+    .catalog-name {
+        font-size: 1rem;
+    }
+
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .catalog-pic1 {
+        height: 140px;
+    }
+}
+
+
+/* book visit site css  */
+.book-free-site-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-free-site-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.book-free-site-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.book-free-site-content input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Book-free-site-submit {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.yes-no-question {
+  margin-bottom: 15px;
+}
+
+.yesNo {
+  margin-right: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+.whatsapp-update {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}

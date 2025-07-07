@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Headers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Section -->
+        <div class="container-fluid paintheaders-top">
+            <div class="paintheaders-phone">
+                <i class="fas fa-phone"></i> +91 9876543210
+            </div>
+            <div class="paintheaders-middle">
+                <a href="index.html"><img src="img/sp logo.png" alt="Logo 1" class="logo-sp"></a>
+                <a href="interiorhome.html"><img src="img/sds logo.png" alt="Logo 2"></a>
+                <a href="infrahome.html"><img src="img/infra-logo.png" alt="Logo 3" class="logo-infa"></a>
+            </div>
+            <div class="paintheaders-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Bottom Section (Responsive Navbar) -->
+        <nav class="navbar navbar-expand-lg paintheaders-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand paintheaders-logo-1" href="index.html">
+                    <img src="img/sp logo.png" alt="Right Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto paintheaders-menu">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sales.html">Sales & Brands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ourteams.html">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="paintcontact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="interiorhome.html" class="paintheaders-button">Surya Paint</a>
+                        <a href="#" class="paintheaders-button">Book Slot<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="painthomebanner">
+        <img src="img/our-team-banner.jpg" alt="Paint Banner" class="painthomebanner-img">
+        <div class="painthomebanner-form-wrapper">
+            <form id="whatsappForm" class="painthomebanner-form">
+                <h4 class="text-center mb-3">Get a Free Painting Quote</h4>
+
+                <!-- Hidden input for service type -->
+                <input type="hidden" id="serviceType" value="Paint Sales Page">
+
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+                </div>
+                <div class="mb-2">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email id" required>
+                </div>
+                <div class="mb-2">
+                    <input type="tel" class="form-control" id="mobile" placeholder="+91 Enter mobile number" required>
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="pincode" placeholder="Enter pin code" required>
+                </div>
+
+                <p class="mb-1">Is any construction work going on?</p>
+                <div class="d-flex gap-3 mb-2">
+                    <label><input type="radio" name="construction" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="construction" value="No" required> No</label>
+                </div>
+
+                <p class="mb-1">Is there a local painter hired?</p>
+                <div class="d-flex gap-3 mb-3">
+                    <label><input type="radio" name="painter" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="painter" value="No" required> No</label>
+                </div>
+
+                <button type="submit" class="btn w-100 painthomebanner-bnt12">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <section class="container-fluid p-5">
+        <h2 class="text-center fw-bold painthometeam-title">
+            <span class="half-gradient">Meet Our Team</span>
+        </h2>
+        <div class="row gy-4 justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="painthometeam-card">
+                    <img src="img/ourteam1.png" alt="Ben Ashley">
+                    <div class="painthometeam-info">
+                        <h5>Ben Ashley</h5>
+                        <p>Digital Strategist</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="painthometeam-card">
+                    <img src="img/ourteam2.png" alt="Amanda Nguyen">
+                    <div class="painthometeam-info">
+                        <h5>Amanda Nguyen</h5>
+                        <p>Managing Director</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="painthometeam-card">
+                    <img src="img/ourteam1.png" alt="Amy Deschamps">
+                    <div class="painthometeam-info">
+                        <h5>Amy Deschamps</h5>
+                        <p>Director of Operations + Analytics</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="painthometeam-card">
+                    <img src="img/ourteam2.png" alt="Luther Makina">
+                    <div class="painthometeam-info">
+                        <h5>Luther Makina</h5>
+                        <p>Digital Strategist</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="whychooseus-banner">
+        <div class="whychooseus-overlay">
+            <h1 class="whychooseus-heading">Looking for reliable, professional painting services?</h1>
+            <a href="interiorhome.html" class="whychooseus-btn">Designer</a>
+        </div>
+    </section>
+
+    <!-- about us section  -->
+    <div class="container-fluid p-5">
+        <div>
+            <h2 class="painthomeabout-title">
+                <span class="half-gradient">About Us</span>
+            </h2>
+            <p class="painthomeabout-para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p class="painthomeabout-para">
+                Creating a home out of a space is a beautiful journey, and at Asian Paints, we are honored to take that
+                journey with you. From the moment you decide to transform your living space, we are here to support you
+                every step of the way. We begin with the essentials of painting a home, such as waterproofing your home
+                to ensure its longevity and protection. Then, we help you select the perfect colors from our extensive
+                range, guiding you through our Colour Inspiration Zone to find hues that reflect your personality and
+                style. Finally, our interior design experts work with you to create a thorough plan that brings your
+                vision to life. At Asian Paints, we are dedicated to turning your dreams into reality, creating a home
+                that is not only beautiful but truly yours.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!-- faqs section  -->
+    <section class="container-fluid p-5">
+        <!-- Title with Gradient Color -->
+        <h2 class="text-center fw-bold painthomefaqs-title">
+            <span class="half-gradient">Frequently Asked Questions</span>
+        </h2>
+
+        <div class="painthomefaqs-container" id="faqAccordion">
+
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+                        How can I contact customer support ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        You can reach our customer support team by email at support@yourwebsite.com or through the contact form on our website. We aim to respond to all inquiries within 24 hours.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                        What are your customer service hours ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        Our customer support team is available Monday to Friday from 9 AM to 6 PM (EST). We’re here to assist you during business hours!
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                        Can I get help with product recommendations or advice ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        Absolutely! Our team is always ready to help with product suggestions or advice. Feel free to reach out through the contact form or chat with us directly.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq4">
+                        Do you offer live chat support ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        Yes! We have a live chat feature on our website for quick responses to your questions. Look for the chat bubble in the bottom corner of your screen!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer code  -->
+    <footer class="painthomefooter-main">
+        <!-- Top Footer Section -->
+        <div class="painthomefooter-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center text-md-start">
+                        <a href="#" class="painthomefooter-logo">
+                            <img src="img/white_sp logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="painthomefooter-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <div class="painthomefooter-contact">
+                            <i class="fas fa-phone"></i>
+                            <span>Need Help? Call us:</span>
+                            <strong>+91 9876543210</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Footer Section -->
+        <div class="painthomefooter-middle">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Warranty And Services</a></li>
+                            <li><a href="#">Support 24/7 page</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Gift Certificates</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Here To Help</h5>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Site Map</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#">Store Locations & Hours</a></li>
+                            <li><a href="#">Click & Collect</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Section -->
+        <div class="painthomefooter-bottom">
+            <div class="container-fluid text-center painthomefooter-bottom-1">
+                <p>© 2025 Interior. Designed by <a href="https://digispheretech.in/index.html"
+                        target="_blank">digisphere.in</a>. All Rights Reserved.</p>
+                <div class="painthomefooter-payment">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>

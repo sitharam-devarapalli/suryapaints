@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Headers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this to your head -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/interior.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Section -->
+        <div class="container-fluid paintheaders-top">
+            <div class="paintheaders-phone">
+                <i class="fas fa-phone"></i> +91 9876543210
+            </div>
+            <div class="paintheaders-middle">
+                <a href="index.html"><img src="img/sp logo.png" alt="Logo 1" class="logo-sp"></a>
+                <a href="interiorhome.html"><img src="img/sds logo.png" alt="Logo 2"></a>
+                <a href="infrahome.html"><img src="img/infra-logo.png" alt="Logo 3" class="logo-infa"></a>
+            </div>
+            <div class="paintheaders-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Bottom Section (Responsive Navbar) -->
+        <nav class="navbar navbar-expand-lg paintheaders-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand paintheaders-logo-2" href="interiorhome.html">
+                    <img src="img/sds logo.png" alt="Right Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto paintheaders-menu">
+                        <li class="nav-item"><a class="nav-link" href="interiorhome.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="interior.html">Interior</a></li>
+                        <li class="nav-item"><a class="nav-link" href="exterior.html">Exterior</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <!-- <button class="paintheaders-button">Surya Paint</button> -->
+                        <a href="#" class="paintheaders-button">Book Slot<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Banner Section -->
+    <div class="painthomebanner">
+        <img src="img/exterior banner.jpg" alt="Paint Banner" class="painthomebanner-img">
+        <div class="painthomebanner-form-wrapper">
+            <form id="whatsappForm" class="painthomebanner-form">
+                <h4 class="text-center mb-3">Get a Free Painting Quote</h4>
+
+                <!-- Hidden input for service type -->
+                <input type="hidden" id="serviceType" value="Exterior Painting Service">
+
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+                </div>
+                <div class="mb-2">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email id" required>
+                </div>
+                <div class="mb-2">
+                    <input type="tel" class="form-control" id="mobile" placeholder="+91 Enter mobile number" required>
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="pincode" placeholder="Enter pin code" required>
+                </div>
+
+                <p class="mb-1">Is any construction work going on?</p>
+                <div class="d-flex gap-3 mb-2">
+                    <label><input type="radio" name="construction" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="construction" value="No" required> No</label>
+                </div>
+
+                <p class="mb-1">Is there a local painter hired?</p>
+                <div class="d-flex gap-3 mb-3">
+                    <label><input type="radio" name="painter" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="painter" value="No" required> No</label>
+                </div>
+
+                <button type="submit" class="btn w-100 painthomebanner-bnt12">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="container-fluid px-5 waterproofing_container">
+        <h3 class="waterproofing-title mb-3 mt-4">OUR WATERPROOF SERVICE</h3>
+        <h2 class="waterproofing-subtitle fw-bold">
+            <span class="half-gradient">Shield Your Home With Expert Waterproofing Services</span>
+        </h2>
+        <p class="waterproofing_para mx-auto">
+            Protect your home from water damage with our expert waterproofing services. Our experienced team uses
+            top-quality materials and advanced techniques to ensure your home stays dry, safe, and secure. From
+            basements to roofs, we offer reliable solutions that prevent leaks and moisture buildup, preserving the
+            integrity of your property for years to come. Shield your home today with our trusted waterproofing
+            services.
+        </p>
+    </section>
+
+    <section class="container-fluid px-5 waterproofing_container">
+        <h2 class="waterproofing-subtitle fw-bold">
+            <span class="half-gradient">How to Waterproof Your Walls?</span>
+        </h2>
+        <p class="waterproofing_para mx-auto">
+            Waterproofing your walls is essential to protect your home from water damage, mold, and structural issues.
+            Start by inspecting your walls for cracks or damp spots, then clean the surface thoroughly to remove dirt
+            and mildew. Fill any cracks with a high-quality sealant, and apply a waterproofing paint or membrane to
+            create a protective barrier. For added defense, consider installing a vapor barrier, especially in areas
+            like basements. Ensure proper exterior drainage to prevent moisture buildup. With these steps, you can
+            safeguard your walls and maintain a dry, secure home.
+        </p>
+    </section>
+
+    <section class="container-fluid px-5 waterproofing_container">
+        <h2 class="waterproofing-subtitle mb-4 fw-bold">
+            <span class="half-gradient">Different Types of Waterproofing</span>
+        </h2>
+
+        <div class="row align-items-center waterproofing-section mb-5">
+            <div class="col-md-6">
+                <div class="waterproofing-content">
+                    <h3>Cementitious Waterproofing</h3>
+                    <p>Cementitious waterproofing is one of the simplest and most cost-effective methods of protecting
+                        surfaces from water damage. This technique involves applying a cement-based compound mixed with
+                        water to form a thick, protective layer over concrete or masonry surfaces. It's often used for
+                        areas that are exposed to constant moisture, such as bathrooms, basements, and swimming pools.
+                        The material is easy to apply, can be done by both professionals and DIY enthusiasts, and
+                        provides an excellent barrier against water infiltration. One of the key benefits is its
+                        durability and ability to create a solid, seamless coating that lasts for years, making it an
+                        ideal choice for spaces with high water exposure.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/c_waterproof.png" alt="Cement Waterproofing" class="img-fluid waterproofing-img">
+            </div>
+        </div>
+
+        <div class="row align-items-center waterproofing-section flex-md-row-reverse mb-5">
+            <div class="col-md-6">
+                <div class="waterproofing-content">
+                    <h3>Liquid Waterproofing Membrane</h3>
+                    <p>A liquid waterproofing membrane offers a modern, flexible, and highly effective solution for
+                        creating a waterproof barrier. It’s a liquid-based product that is applied directly to the
+                        surface, where it forms a seamless, rubber-like membrane that prevents water penetration. The
+                        advantage of this system is that it can be applied to virtually any surface, including roofs,
+                        balconies, bathrooms, and even terraces. This type of waterproofing is particularly beneficial
+                        in areas with irregular shapes or complex details because the liquid can easily conform to the
+                        surface. Once dried, the membrane creates a continuous protective layer that is resistant to
+                        weathering, UV rays, and extreme temperatures. It’s a versatile solution for both interior and
+                        exterior applications, providing long-term protection against water damage.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/l_waterproof.png" alt="Liquid Waterproofing" class="img-fluid waterproofing-img">
+            </div>
+        </div>
+
+        <div class="row align-items-center waterproofing-section mb-5">
+            <div class="col-md-6">
+                <div class="waterproofing-content">
+                    <h3>Bituminous Waterproofing</h3>
+                    <p>Bituminous waterproofing is a reliable and durable solution that utilizes bitumen-based products,
+                        such as asphalt or tar, to form a waterproof barrier. This method is commonly used on flat
+                        roofs, foundations, and below-grade applications, where water exposure is a concern. The bitumen
+                        material is either applied as a liquid coating or used in pre-formed sheets. This type of
+                        waterproofing is ideal for larger structures or areas with a high risk of water infiltration
+                        because it provides a tough, flexible barrier that can withstand harsh weather conditions.
+                        Bituminous membranes are also heat-resistant, making them suitable for roofing applications
+                        where high temperatures are a concern. Additionally, they provide excellent protection against
+                        moisture, helping to prevent leaks and structural damage.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/b_waterproof.png" alt="Bituminous Waterproofing" class="img-fluid waterproofing-img">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- exterior section code  -->
+    <section class="interiorhomeexterior-hero d-flex align-items-center text-white">
+        <div class="container-fluid text-center">
+            <h1 class="display-4 fw-bold">Transform Your Outdoors</h1>
+            <p class="lead">Elegant Exterior Designs For Modern Living</p>
+            <a href="#" class="btn btn-light interiorhomeexterior-cta">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Diagonal Divider -->
+    <div class="interiorhomeexterior-divider"></div>
+
+    <!-- Brand Logo Section -->
+    <section class="py-5 interiorhomeexterior-logo-section bg-light">
+        <div class="container-fluid px-5 text-center">
+            <h2 class="fw-bold mb-4">Our Trusted Partners</h2>
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/120x60?text=Logo+1"
+                        class="img-fluid interiorhomeexterior-logo" alt="Brand 1">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/120x60?text=Logo+2"
+                        class="img-fluid interiorhomeexterior-logo" alt="Brand 2">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/120x60?text=Logo+3"
+                        class="img-fluid interiorhomeexterior-logo" alt="Brand 3">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/120x60?text=Logo+4"
+                        class="img-fluid interiorhomeexterior-logo" alt="Brand 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Product Showcase Section -->
+<section class="py-5 interiorhomeexterior-products bg-white">
+    <div class="container-fluid px-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Featured Exterior Products</h2>
+        <p>Premium materials for luxury exterior design.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card interiorhomeexterior-product-card h-100 shadow-sm">
+            <img src="img/exterior-1.jpg" class="card-img-top" alt="Outdoor Furniture">
+            <div class="card-body text-center">
+              <h5 class="card-title">Outdoor Furniture</h5>
+              <p class="card-text">Weather-proof elegance for patios and terraces.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card interiorhomeexterior-product-card h-100 shadow-sm">
+            <img src="img/exterior-2.jpg" class="card-img-top" alt="Wall Cladding">
+            <div class="card-body text-center">
+              <h5 class="card-title">Wall Cladding</h5>
+              <p class="card-text">Modern textures and finishes to enhance appeal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card interiorhomeexterior-product-card h-100 shadow-sm">
+            <img src="img/exterior-3.jpg" class="card-img-top" alt="Exterior Lights">
+            <div class="card-body text-center">
+              <h5 class="card-title">Exterior Lighting</h5>
+              <p class="card-text">Lighting solutions that highlight every corner.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- faqs section  -->
+    <section class="container-fluid p-5">
+        <!-- Title with Gradient Color -->
+        <h2 class="text-center fw-bold painthomefaqs-title">
+            <span class="half-gradient">Frequently Asked Questions</span>
+        </h2>
+
+        <div class="painthomefaqs-container" id="faqAccordion">
+
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+                        What services does your interior design studio offer ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        We offer a wide range of services including space planning, 2D/3D designs, modular kitchen
+                        design, custom furniture, home & office interiors, renovation, and complete project execution.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                        How does the design process work ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        Our process begins with a consultation to understand your vision. Then, we create concepts, 3D
+                        visualizations, material selection, and once approved, we move into execution and installation.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                        Can I get a custom design that fits my budget ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        Absolutely! We tailor each design according to your budget and preferences while ensuring the
+                        best quality and aesthetic output.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item painthomefaqs-item">
+                <h2 class="accordion-header">
+                    <button class="collapsed painthomefaqs-question" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq4">
+                        Do I need to move out during the renovation ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body painthomefaqs-answer">
+                        It depends on the scale of the project. For large renovations, we might suggest temporary
+                        relocation. However, for modular or single-room work, it’s possible to continue staying.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer code  -->
+    <footer class="painthomefooter-main">
+        <!-- Top Footer Section -->
+        <div class="painthomefooter-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center text-md-start">
+                        <a href="#" class="painthomefooter-logo">
+                            <img src="img/white-sds logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="painthomefooter-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <div class="painthomefooter-contact">
+                            <i class="fas fa-phone"></i>
+                            <span>Need Help? Call us:</span>
+                            <strong>+91 9876543210</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Footer Section -->
+        <div class="painthomefooter-middle">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Warranty And Services</a></li>
+                            <li><a href="#">Support 24/7 page</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Gift Certificates</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Here To Help</h5>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Site Map</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#">Store Locations & Hours</a></li>
+                            <li><a href="#">Click & Collect</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Section -->
+        <div class="painthomefooter-bottom">
+            <div class="container-fluid text-center painthomefooter-bottom-1">
+                <p>© 2025 Interior. Designed by <a href="https://digispheretech.in/index.html"
+                        target="_blank">digisphere.in</a>. All Rights Reserved.</p>
+                <div class="painthomefooter-payment">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="js/index.js"></script>
+<script src="js/interior.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
