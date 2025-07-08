@@ -2453,82 +2453,102 @@ pre {
 }
 
 
-/* branche's section css  */
-.painthomebranches-number {
-    font-size: 36px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 10px;
+/* Section Background */
+.branches-section {
+  background: #f9f3e7;
+  padding:50px;
 }
 
-.painthomebranches-title {
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 10px;
+/* Heading */
+.branches-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
-.painthomebranches-description {
-    font-size: 15px;
-    color: #444;
-    margin-bottom: 5px;
-    font-weight: 500;
+.highlight-text {
+  color: #8a259b;
 }
 
-.painthomebranches-description-1 {
-    font-size: 15px;
-    color: #444;
-    margin-bottom: 20px;
-    font-weight: 500;
+/* Branch Card */
+.branch-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  text-align: center;
 }
 
-.painthomebranches-btn {
-    font-weight: 600;
-    color: #8a259b;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
+.branch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-.painthomebranches-btn:hover {
-    color: #022179;
-    text-decoration: underline;
+.branch-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
 }
 
-.painthomebranches-section {
-    background-color: #f2e6fb;
+.branch-card p {
+  font-size: 15px;
+  margin: 8px 0;
+  color: #444;
+}
+.painthomebranches-description a,
+.painthomebranches-description-1 a {
+  color: #444;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.painthomebranches-step {
-    padding: 0px 25px;
+.painthomebranches-description a:hover,
+.painthomebranches-description-1 a:hover {
+  color: #8a259b;
+  text-decoration: none;
 }
 
-@media (max-width: 991.98px) {
-    .painthomebranches-step {
-        padding: 0px 10px;
-    }
+/* Button Style */
+.branch-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #8a259b;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
-@media (max-width: 767.98px) {
-    .painthomebranches-step {
-        padding: 0px 10px;
-        text-align: center;
-    }
+.branch-btn:hover {
+  background: #022179;
+  color: #fff;
+}
 
-    .painthomebranches-numword {
-        justify-content: start;
-        flex-direction: column;
-        align-items: start;
-    }
+/* Responsive Design */
+@media (max-width: 767px) {
+  .branches-heading {
+    font-size: 24px;
+  }
 
-    .painthomebranches-description,
-    .painthomebranches-description-1 {
-        text-align: center;
-    }
+  .branch-card {
+    padding: 20px;
+  }
 
-    .painthomebranches-btn {
-        justify-content: center;
-    }
+  .branch-title {
+    font-size: 18px;
+  }
+
+  .branch-card p {
+    font-size: 14px;
+  }
+
+  .branch-btn {
+    font-size: 14px;
+  }
 }
 
 /* upcomming branch's section css  */
