@@ -3524,6 +3524,7 @@ pre {
   color: #333;
   background: #fff;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .paints-services-section .list-group-item:hover {
@@ -3592,6 +3593,14 @@ pre {
   font-size: 28px;
   font-weight: bold;
   color: #f0ad4e;
+}
+.paint-service-imgs {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
 }
 
 /* Responsive Adjustments */

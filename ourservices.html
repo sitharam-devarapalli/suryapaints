@@ -111,12 +111,12 @@
                 <div class="col-md-4">
                     <div class="sidebar paint-sidebar-section shadow-sm mb-4">
                         <ul class="list-group" id="serviceMenu">
-                            <li class="list-group-item active">Room Wallpapers</li>
+                            <li class="list-group-item active">Interior wall paint</li>
                             <li class="list-group-item">Wall Painting</li>
                             <li class="list-group-item">Wall Sheets</li>
-                            <li class="list-group-item">Outdoor Design</li>
-                            <li class="list-group-item">PVC Panels</li>
-                            <li class="list-group-item">Interior Designing</li>
+                            <li class="list-group-item">Wood Solutions</li>
+                            <li class="list-group-item">Exterior wall paint</li>
+                            <li class="list-group-item">Waterproofing Services</li>
                         </ul>
 
                         <div class="call-box-design text-center mt-4 mb-2">
@@ -144,16 +144,12 @@
                 </div>
 
                 <!-- Sidebar Content -->
+                <!-- Right Content Area -->
                 <div class="col-md-8">
-                    <div class="service-content p-3">
-                        <img src="img/sofa-room.jpg" alt="Room Wallpapers" class="img-fluid rounded mb-3"
+                    <div class="service-content">
+                        <img src="img/interior-walls.webp" alt="Room Wallpapers" class="paint-service-imgs mb-3"
                             id="serviceImage">
-                        <h4 class="fw-bold" id="serviceTitle">Room Wallpapers</h4>
-                        <p class="text-muted" id="serviceText">
-                            Room Wallpapers bring elegance and personality to your space. From subtle textures to bold
-                            patterns,
-                            choose from a wide range of options to transform your home.
-                        </p>
+                        <div id="serviceText" class="text-muted"></div>
                     </div>
                 </div>
             </div>
@@ -251,46 +247,110 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     const menuItems = document.querySelectorAll('#serviceMenu .list-group-item');
-    const serviceTitle = document.getElementById('serviceTitle');
     const serviceText = document.getElementById('serviceText');
     const serviceImage = document.getElementById('serviceImage');
+    const serviceTitle = document.getElementById('serviceTitle');
+
 
     const serviceData = {
-        "Room Wallpapers": {
-            text: "Room Wallpapers bring elegance and personality to your space. From subtle textures to bold patterns, choose from a wide range of options to transform your home.",
-            image: "img/sofa-room.jpg"
+        "Interior wall paint": {
+            text: `
+        <h5 class="fw-bold mb-2">Transform Your Interiors with Stunning Wall Finishes</h5>
+        <p>Surya Paints brings you a wide variety of premium interior wall paint solutions. Whether you're looking for vibrant colors, subtle pastels, or designer textures, we offer finishes that elevate every room in your home. From matte to silk, we have everything to match your vision.</p>
+        <p>Our team assists you in selecting the perfect paint shades that reflect your lifestyle and preferences. We work with top brands and provide detailed consultations to help you choose the ideal finish — be it anti-fungal, low-VOC, or washable paint for kids' rooms and kitchens.</p>
+        <p>Give your space a fresh, luxurious feel with our professional interior paint solutions that are long-lasting, environmentally friendly, and stunning to look at.</p>
+        <p>We understand that every room has a unique purpose and mood. That’s why we offer custom color palettes and finish recommendations for bedrooms, living rooms, study areas, and more. Whether you want calming tones or bold statements, we help bring your vision to life.</p>
+        <p>Our interior painting service includes expert surface preparation, precision application, and post-painting touch-ups, ensuring every corner is flawless. From fixing cracks to priming walls, we take care of all the groundwork for a smooth, enduring result.</p>
+        <p>Explore our trending color collections, seasonal inspirations, and smart paint technologies that promote indoor air quality and resist daily wear and tear. With Surya Paints, you’re not just painting a wall — you're creating a masterpiece.</p>
+    `,
+            image: "img/interior-walls.webp"
         },
+
         "Wall Painting": {
-            text: "Wall Painting adds depth and warmth to any space. We provide expert painting solutions using durable and top-brand paints.",
-            image: "img/wall-paint.jpg"
+            text: `
+        <h5 class="fw-bold mb-2">Expert Wall Painting Services</h5>
+        <p>Surya Paints offers end-to-end wall painting services using top-quality materials and experienced professionals. Whether it’s a single accent wall or an entire residential or commercial repainting project, we ensure a smooth finish, clean lines, and zero paint mess.</p>
+        <p>Our painters follow a structured process including surface preparation, primer coating, and detailed finishing. We use tools and techniques that enhance paint absorption and ensure lasting results. The paints we use are fade-resistant and provide a smooth, elegant texture on every surface.</p>
+        <p>Let us bring new life to your walls with beautiful colors and finishes that redefine your space.</p>
+        <p>We also offer color consultation services to help you select the right shades based on lighting, space usage, and décor. Whether you're looking for something bold, cozy, or modern, our team will guide you every step of the way.</p>
+        <p>Our services include interior and exterior wall painting for apartments, villas, offices, showrooms, and more. We strictly follow timelines and ensure your space is left clean and ready to use — with minimal disruption to your routine.</p>
+        <p>Choose from a wide range of paint types including eco-friendly, anti-dust, stain-resistant, and quick-dry options. At Surya Paints, we combine artistry with precision to deliver wall painting solutions that truly stand out.</p>
+    `,
+            image: "img/wall paint.jpg"
         },
+
         "Wall Sheets": {
-            text: "Wall Sheets offer strong protection and aesthetic appeal for modern interiors. Ideal for commercial and residential use.",
-            image: "img/wall-sheets.jpg"
+            text: `
+        <h5 class="fw-bold mb-2">Stylish & Durable Wall Sheet Installations</h5>
+        <p>Looking for a modern and low-maintenance wall solution? Our wall sheets are a perfect blend of style, strength, and affordability. They are moisture-proof, easy to clean, and available in a wide array of textures, wood patterns, and solid colors.</p>
+        <p>Ideal for commercial spaces, kitchens, bathrooms, and high-traffic areas, wall sheets from Surya Paints are easy to install and provide excellent insulation. We also offer decorative and 3D wall sheets for premium interiors.</p>
+        <p>Experience easy transformation without the hassle of regular paint touch-ups with our top-notch wall sheet solutions.</p>
+        <p>Our wall sheets are fire-retardant, termite-resistant, and built to last, making them a safe and durable option for both homes and businesses. They’re perfect for upgrading outdated walls without the mess of traditional renovations.</p>
+        <p>We offer tailored designs to match your aesthetic preferences — from natural wood finishes to sleek metallic or marble-look panels. You can mix and match panels for a custom look that adds depth and personality to any space.</p>
+        <p>With professional installation and minimal maintenance, Surya Paints ensures that your wall sheets stay beautiful for years. Trust our team to deliver seamless finishes and quick turnarounds without compromising on quality.</p>
+    `,
+            image: "img/wall sheets.jpg"
         },
-        "Outdoor Design": {
-            text: "Our Outdoor Design services enhance curb appeal with weatherproof paints and creative color schemes tailored to your exterior.",
-            image: "img/outdoor.jpg"
+
+        "Wood Solutions": {
+            text: `
+        <h5 class="fw-bold mb-2">Preserve and Beautify Your Wooden Surfaces</h5>
+        <p>Surya Paints offers a comprehensive range of wood care products and solutions — from sanding and staining to polishing and protective coatings. Whether it’s doors, furniture, partitions, or cabinets, our wood finishes enhance the natural grain while adding durability and shine.</p>
+        <p>We provide services including PU coating, melamine polish, and water-based clear finishes suitable for both indoor and outdoor wooden surfaces. Our experts ensure proper preparation and application for long-lasting protection from moisture, insects, and weather effects.</p>
+        <p>Trust Surya Paints to retain the beauty of your wood with elegant finishes and expert application services.</p>
+        <p>Our wood solutions are available in a variety of sheens — matte, semi-gloss, and high-gloss — allowing you to choose the perfect finish that suits your interior style. From antique woodwork to modern carpentry, we treat every surface with precision.</p>
+        <p>We use eco-friendly and low-odor products that are safe for homes, especially where kids and pets are around. Our coatings are UV-resistant and maintain their color and finish even after years of exposure to sunlight and daily use.</p>
+        <p>In addition to protection, our wood treatments bring out the richness of wood tones and textures. Whether you're restoring old furniture or finishing new installations, Surya Paints ensures a premium, professional result every time.</p>
+    `,
+            image: "img/Wood Solutions.jpg"
         },
-        "PVC Panels": {
-            text: "PVC Panels are lightweight, stylish, and waterproof. Perfect for bathrooms, kitchens, and modern decor solutions.",
-            image: "img/pvc-panels.jpg"
+
+        "Exterior wall paint": {
+            text: `
+        <h5 class="fw-bold mb-2">Weather-Resistant Exterior Paint Services</h5>
+        <p>Surya Paints specializes in exterior painting that stands strong against India’s diverse climate. Our premium weathercoat emulsions and anti-dust formulas ensure that your walls stay vibrant and protected for years to come.</p>
+        <p>We recommend breathable, crack-bridging paints that provide waterproofing and UV resistance — essential for walls exposed to harsh sunlight, rain, and pollution. From villas and apartments to commercial buildings and factories, we deliver a bold, bright, and clean look outside.</p>
+        <p>Give your exterior walls the power to shine and stay protected — all with Surya Paints’ expert exterior painting solutions.</p>
+        <p>We conduct detailed surface assessments and recommend the right primer and putty before painting, ensuring maximum adhesion and long-lasting results. Our trained team handles everything — from pressure washing to minor repairs — before applying the final coat.</p>
+        <p>Choose from a wide range of modern shades and finishes, including satin, matte, and textured exterior coatings that complement your property's architecture and landscape. We also offer color customization based on your brand or design themes.</p>
+        <p>With Surya Paints, you get more than just color — you get protection, elegance, and peace of mind. Our exterior paint systems are designed to reduce wall temperature, resist algae formation, and keep your façade looking fresh season after season.</p>
+    `,
+            image: "img/Exterior wall paint.jpg"
         },
-        "Interior Designing": {
-            text: "Transform your space with our Interior Designing solutions – from color consultancy to complete aesthetic upgrades.",
-            image: "img/interior.jpg"
-        }
+
+        "Waterproofing Services": {
+            text: `
+        <h5 class="fw-bold mb-2">Reliable Waterproofing for Stronger Structures</h5>
+        <p>Moisture can silently damage walls, roofs, and basements. Surya Paints provides professional waterproofing services using modern techniques and chemical solutions that penetrate deeply and block water seepage completely.</p>
+        <p>We offer waterproofing for terraces, bathrooms, tanks, basements, exterior walls, and roofs. Our materials include elastomeric coatings, membranes, crack sealants, and sealers that prevent fungal growth and reduce structural damage over time.</p>
+        <p>Prevent costly repairs and maintain the strength of your building — choose Surya Paints for proven waterproofing performance.</p>
+        <p>Our team conducts detailed inspections to identify leakage points, weak surfaces, and moisture levels before recommending a tailored waterproofing approach. We use only certified, industry-grade products that ensure deep protection and long-term reliability.</p>
+        <p>From negative side waterproofing for basements to liquid membranes for roofs, we offer targeted solutions that protect both residential and commercial structures. Our fast-drying, weather-resistant systems make your property safer and more energy-efficient.</p>
+        <p>Backed by warranties and expert application, Surya Paints’ waterproofing services guarantee peace of mind. Say goodbye to damp patches, wall cracks, and mold — we help you build and maintain healthier, stronger spaces from the inside out.</p>
+    `,
+            image: "img/Waterproofing Services.jpg"
+        },
+
     };
 
+    // Bind menu item clicks
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
             menuItems.forEach(i => i.classList.remove('active'));
             item.classList.add('active');
+
             const service = item.textContent.trim();
-            serviceTitle.textContent = service;
-            serviceText.textContent = serviceData[service].text;
-            serviceImage.src = serviceData[service].image;
+
+            if (serviceData[service]) {
+                serviceImage.src = serviceData[service].image;
+                serviceText.innerHTML = serviceData[service].text;
+            }
         });
+    });
+
+    // ✅ Trigger default content on page load (first menu item)
+    document.addEventListener('DOMContentLoaded', () => {
+        menuItems[0].click();  // This will load the first service on initial load
     });
 </script>
 
