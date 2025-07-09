@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Paints</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon-sp1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Minimal Bootstrap (Grid + Utilities Only) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+
+    <!-- Isolated Slick Carousel CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Top Section -->
+        <div class="container-fluid paintheaders-top">
+            <div class="paintheaders-phone">
+                <a href="tel:+918019812939" class="phone-link">
+                    <i class="fas fa-phone"></i> +91 8019812939
+                </a>
+            </div>
+
+            <div class="paintheaders-middle">
+                <a href="index.html"><img src="img/sp logo.png" alt="Logo 1" class="logo-sp"></a>
+                <a href="interiorhome.html"><img src="img/sds logo.png" alt="Logo 2"></a>
+                <a href="infrahome.html"><img src="img/infra-logo.png" alt="Logo 3" class="logo-infa"></a>
+            </div>
+
+            <div class="paintheaders-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Bottom Section (Responsive Navbar) -->
+        <nav class="navbar navbar-expand-lg paintheaders-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand paintheaders-logo-1" href="index.html">
+                    <img src="img/sp logo.png" alt="Right Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto paintheaders-menu">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sales.html">Sales & Brands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ourservices.html">Our Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="paintcontact.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Our Works</a></li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="paintheaders-button">Book Slot<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="painthomebanner">
+        <img src="img/brands-banner.jpg" alt="Paint Banner" class="painthomebanner-img">
+        <div class="painthomebanner-form-wrapper">
+            <form id="whatsappForm" class="painthomebanner-form">
+                <h4 class="text-center mb-3">Get a Free Painting Quote</h4>
+
+                <!-- Hidden input for service type -->
+                <input type="hidden" id="serviceType" value="Painting Quote">
+
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+                </div>
+                <div class="mb-2">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email id" required>
+                </div>
+                <div class="mb-2">
+                    <input type="tel" class="form-control" id="mobile" placeholder="+91 Enter mobile number" required>
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="pincode" placeholder="Enter pin code" required>
+                </div>
+
+                <p class="mb-1">Is any construction work going on?</p>
+                <div class="d-flex gap-3 mb-2">
+                    <label><input type="radio" name="construction" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="construction" value="No" required> No</label>
+                </div>
+
+                <p class="mb-1">Is there a local painter hired?</p>
+                <div class="d-flex gap-3 mb-3">
+                    <label><input type="radio" name="painter" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="painter" value="No" required> No</label>
+                </div>
+
+                <button type="submit" class="btn w-100 painthomebanner-bnt12">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section for Surya Paints -->
+    <section class="about-whychooseus-main">
+        <div class="container-fluid p-0 about-whychooseus-container">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-md-6">
+                    <div class="image-container-aboutwhychooseus">
+                        <img src="img/why-choose-us-paints.jpeg" alt="Surya Paints Image" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Text Section -->
+                <div class="col-md-6">
+                    <div class="mb-2 text-black fw-semibold">
+                        <i class="bi bi-dot"></i> Why Choose Us
+                    </div>
+                    <div class="text-section-aboutwhychooseus">
+                        <h2>Bringing Color to Life with Quality & Trust</h2>
+                        <p>Choosing Surya Paints means choosing vibrant, long-lasting color solutions backed by
+                            innovation and a commitment to excellence. We provide high-performance paints for homes,
+                            businesses, and industrial needs—designed to protect, beautify, and inspire. With
+                            eco-friendly formulas and cutting-edge technology, we ensure durability, finish, and
+                            customer satisfaction every time.</p>
+                        <div class="contact-section-aboutwhychooseus">
+                            <div class="wellness-journey-aboutwhychooseus">
+                                <h5>Your Color Journey</h5>
+                                <p>Get Expert Color Consultation Today</p>
+                                <a href="paintcontact.html" class="bnt bnt-booking">Book Consultation</a>
+                            </div>
+                            <div class="need-care-aboutwhychooseus">
+                                <h5>Need Assistance?</h5>
+                                <p>Our paint experts are ready 24/7. Call us now!</p>
+                                <a href="tel:+918019812939" class="bnt bnt-booking">+91 8019812939</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Teams Section -->
+    <section class="sr-teams-section py-5">
+        <div class="container-fluid">
+            <p class="sr-teams-desc mb-2">Our Teams</p>
+            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <h2 class="sr-teams-heading mb-0">Meet the Leaders <span>That Drive Our Success</span></h2>
+                <div class="sr-teams-arrows d-flex gap-2 mt-3 mt-md-0">
+                    <button class="arrow-btn team-prev">&larr;</button>
+                    <button class="arrow-btn team-next">&rarr;</button>
+                </div>
+            </div>
+
+            <div class="sr-teams-slider">
+                <!-- Team Member Card -->
+                <div class="sr-teams-card">
+                    <div class="sr-teams-img-box">
+                        <img src="img/ceo_picture.webp" alt="VERONICA ISBAN">
+                        <div class="sr-teams-overlay">
+                            <h5>Ravi Teja</h5>
+                            <p>Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sr-teams-card">
+                    <div class="sr-teams-img-box">
+                        <img src="img/.png" alt="VERONICA ISBAN">
+                        <div class="sr-teams-overlay">
+                            <h5>Pavan</h5>
+                            <p>Co-Orapator & Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sr-teams-card">
+                    <div class="sr-teams-img-box">
+                        <img src="img/png" alt="VERONICA ISBAN">
+                        <div class="sr-teams-overlay">
+                            <h5>Raja Manikanta</h5>
+                            <p>General Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sr-teams-card">
+                    <div class="sr-teams-img-box">
+                        <img src="img/.png" alt="VERONICA ISBAN">
+                        <div class="sr-teams-overlay">
+                            <h5>Dinesh</h5>
+                            <p>Sales Manager Stores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sr-teams-card">
+                    <div class="sr-teams-img-box">
+                        <img src="img/.png" alt="VERONICA ISBAN">
+                        <div class="sr-teams-overlay">
+                            <h5>Subu</h5>
+                            <p>Sales Head Kaikaluru</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sr-teams-card">
+                    <div class="sr-teams-img-box">
+                        <img src="img/.png" alt="VERONICA ISBAN">
+                        <div class="sr-teams-overlay">
+                            <h5>Vamsi</h5>
+                            <p>Sales Head Kaikaluru</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for others -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="sr-review-section">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                <div>
+                    <p class="sr-teams-desc mb-2">People Say About Us</p>
+                    <h2 class="sr-review-title m-0">Clients' Testimonials</h2>
+                </div>
+                <div class="sr-review-arrows d-flex gap-2 mt-3 mt-md-0">
+                    <button class="arrow-btn review-prev">&larr;</button>
+                    <button class="arrow-btn review-next">&rarr;</button>
+                </div>
+            </div>
+
+            <div class="sr-review-slider gap-3 ">
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Greetings. Very recently I painted my walls with Surya Paints, they
+                        painted my 2 bedroom appartment in Vijayawada, Dinesh was very co operative, Humble and
+                        supervised the job. I am very happy with the work and also the paint shop owner Mr.Kalyan &&team
+                        was very perfect in their job. I strongly recommend many more clients to make use of your
+                        professional services at reasonable cost.</p>
+                    <h6 class="sr-review-author">Sarikarani V</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">I had a great experience with this store! They have a wide range of Asian
+                        Paints products and all the tools you might need for any painting project—whether it’s for your
+                        home or office. The staff is knowledgeable and helped me pick the right colors and finishes for
+                        my needs. Prices are reasonable and the quality of products is top-notch. Highly recommend this
+                        place for anyone looking for paint supplies and tools!</p>
+                    <h6 class="sr-review-author">Sai Charan</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">First of its kind in Eluru, which gives a great buying experience for the
+                        customers who want to make their homes colorful and beautiful.</p>
+                    <h6 class="sr-review-author">ujwal sai kumar koppula</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Paints and Accessories very Reasonable Rates. The Shop owners and Staff
+                        very Coordinate.</p>
+                    <h6 class="sr-review-author">Devineni Hari Krishna Prasad</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Very good and promt response.. very with with the service provided 👍👍
+                    </p>
+                    <h6 class="sr-review-author">Sri Harsha</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Good company and selling quality paints with whole sale prices</p>
+                    <h6 class="sr-review-author">Praveen Sarsripraveen</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Im happy with your team service,price, quality and very big thanks to Teja
+                        😊.</p>
+                    <h6 class="sr-review-author">sai tej</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Good Compney and selling to quality pains are good resiving</p>
+                    <h6 class="sr-review-author">CHINNAM BALU</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Nice service and quality paints with reasonable prices
+                        Owners are very friendly</p>
+                    <h6 class="sr-review-author">Sriram gajjarapu</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Good service, reasonable prices and quality services</p>
+                    <h6 class="sr-review-author">Ramana kumar Gajjarapu</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Great experience store</p>
+                    <h6 class="sr-review-author">Mani Kanta</h6>
+                </div>
+
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Thanks Dinesh your the best worker of your company,Your the good employee
+                        in your store.</p>
+                    <h6 class="sr-review-author">Naveen Allada</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Thank Dinesh for helping me in choosing the best products at low prices
+                    </p>
+                    <h6 class="sr-review-author">MULTIMEDIA</h6>
+                </div>
+                <div class="sr-review-card">
+                    <div class="sr-review-stars">★★★★★</div>
+                    <p class="sr-review-text">Asian all products are available And holesale price</p>
+                    <h6 class="sr-review-author">Vara. thambi</h6>
+                </div>
+                <!-- Repeat for other reviews -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Branches Section -->
+    <section class="branches-section">
+        <div class="container-fluid">
+            <h2 class="text-center mb-5 fw-bold"><span class="half-gradient">Our Branches</span></h2>
+            <div class="row g-4 justify-content-center">
+
+                <!-- Branch 1 -->
+                <div class="col-md-4">
+                    <div class="branch-card">
+                        <h3 class="branch-title">📍 Satrampadu</h3>
+                        <p class="painthomebranches-description">
+                            <a href="tel:+918019812939">
+                                <i class="fa-solid fa-phone"></i> +91 8019812939
+                            </a>
+                        </p>
+
+                        <p class="painthomebranches-description-1">
+                            <a href="mailto:suryapaintseluru@gmail.com">
+                                <i class="fa-solid fa-inbox"></i> suryapaintseluru@gmail.com
+                            </a>
+                        </p>
+                        <a href="https://g.co/kgs/ZU2Nqb6" target="_blank" class="branch-btn"> <i class="fas fa-map-marker-alt"></i> Location</a>
+                    </div>
+                </div>
+
+                <!-- Branch 2 -->
+                <div class="col-md-4">
+                    <div class="branch-card">
+                        <h3 class="branch-title">📍 Chataparru</h3>
+                        <p class="painthomebranches-description">
+                            <a href="tel:+919502406036">
+                                <i class="fa-solid fa-phone"></i> +91 9502406036
+                            </a>
+                        </p>
+
+                        <p class="painthomebranches-description-1">
+                            <a href="mailto:suryapaintseluru@gmail.com">
+                                <i class="fa-solid fa-inbox"></i> suryapaintseluru@gmail.com
+                            </a>
+                        </p>
+                        <a href="#" target="_blank " class="branch-btn"><i class="fas fa-map-marker-alt"></i> Location</a>
+                    </div>
+                </div>
+
+                <!-- Branch 3 -->
+                <div class="col-md-4">
+                    <div class="branch-card">
+                        <h3 class="branch-title">📍 Kaikaluru</h3>
+                        <p class="painthomebranches-description">
+                            <a href="tel:+919701219229">
+                                <i class="fa-solid fa-phone"></i> +91 9701219229
+                            </a>
+                        </p>
+
+                        <p class="painthomebranches-description-1">
+                            <a href="mailto:suryapaintseluru@gmail.com">
+                                <i class="fa-solid fa-inbox"></i> suryapaintseluru@gmail.com
+                            </a>
+                        </p>
+                        <a href="#" target="_blank" class="branch-btn"><i class="fas fa-map-marker-alt"></i> Location</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- upcomming branch's details section  -->
+    <section class="pb-5 pt-2 text-white" style="background-color: #f9f3e7;">
+        <div class="container-fluid px-5">
+            <h2 class="text-center mb-5 fw-bold"><span class="half-gradient">Future Expansion</span></h2>
+
+            <div class="row g-4">
+                <!-- Branch 1 -->
+                <div class="col-md-6">
+                    <div
+                        class="branch-banner p-4 bg-gradient rounded-4 h-100 d-flex flex-column justify-content-center">
+                        <h3 class="mb-2">📍 Vijayawada</h3>
+                        <p class="mb-1">We're excited to announce new branches opening soon, bringing our services
+                            closer to you!</p>
+                        <span class="text-warning">Launching: Comming Soon</span>
+                        <h3 class="collab-heading">Looking for Collaboration</h3>
+                        <p class="collab-text">
+                            I'm open to meaningful collaborations that spark creativity, innovation, and mutual growth.
+                            Let's connect and build something awesome together.
+                        </p>
+                        <p class="collab-text">
+                            Contact Us: <span>+91 8019812939</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Branch 2 -->
+                <div class="col-md-6">
+                    <div
+                        class="branch-banner p-4 bg-gradient rounded-4 h-100 d-flex flex-column justify-content-center">
+                        <h3 class="mb-2">📍 Rajahmundry</h3>
+                        <p class="mb-1">Stay tuned for our upcoming branches, expanding our reach to serve you better
+                            wherever you are!</p>
+                        <span class="text-warning">Launching: Comming Soon</span>
+                        <h3 class="collab-heading">Looking for Collaboration</h3>
+                        <p class="collab-text">
+                            I'm open to meaningful collaborations that spark creativity, innovation, and mutual growth.
+                            Let's connect and build something awesome together.
+                        </p>
+                        <p class="collab-text">
+                            Contact Us: <span>+91 8019812939</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="container-fluid p-5 painthomecontact-container">
+        <div class="row align-items-center">
+            <!-- Left Side Contact Info -->
+            <div class="col-lg-6">
+                <h2 class="painthomecontact-title"><span class="half-gradient">Contact Us</span></h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Phone:</strong> +91 9876543210</p>
+            </div>
+
+            <!-- Right Side Form -->
+            <div class="col-lg-6">
+                <div class="painthomecontact-form bg-white shadow p-4 rounded">
+                    <h4 class="mb-3">Get in Touch</h4>
+                    <p>You can reach us anytime</p>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="first_name" id="first_name" class="form-control mb-3"
+                                    placeholder="First name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="last_name" id="last_name" class="form-control mb-3"
+                                    placeholder="Last name" required>
+                            </div>
+                        </div>
+                        <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Email"
+                            required>
+                        <input type="tel" name="phone" id="phone" class="form-control mb-3" placeholder="Phone number">
+                        <textarea name="message" id="message" class="form-control mb-3" rows="3"
+                            placeholder="How can we help?" required></textarea>
+                        <button type="submit" class="btn w-100 painthomecontact-bnt1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer code  -->
+    <footer class="ahladafooter-main">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-4">
+                    <div class="ahladafooter-logo">
+                        <img src="img/white_sp logo.png" alt="Logo">
+                    </div>
+                    <p class="ahladafooter-desc">
+                        Surya Paints is your trusted destination for premium paints and professional painting services.
+                        We bring color and quality to homes and commercial spaces.
+                        Partnered with top brands, we ensure vibrant finishes and lasting protection.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="ahladafooter-title">Quick Links</h5>
+                    <ul class="ahladafooter-links">
+                        <li><a href="index.html">+ Home</a></li>
+                        <li><a href="paintcontact.html">+ About Us</a></li>
+                        <li><a href="ourservices.html">+ Our Services</a></li>
+                        <li><a href="sales.html">+ Sales & Brands</a></li>
+                        <li><a href="catalog.html">+ Our Works</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h5 class="ahladafooter-title">Contact</h5>
+                    <ul class="ahladafooter-contact">
+                        <li>
+                            <a href="tel:+918019812939">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <strong>Phone Number</strong>
+                                    <span>+91 8019812939</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:engineers@ahlada.com">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email Address</strong>
+                                    <span>suryapaintseluru@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://g.co/kgs/ZU2Nqb6" target="_blank">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Surya Paints, Near, Satrampadu Rd, Satrampadu, Eluru, Andhra Pradesh
+                                        534007.</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="row pt-4 mt-4 border-top align-items-center">
+                <div class="col-md-6 text-md-start text-center">
+                    <p class="m-0">Copyright © 2025 <a href="https://digispheretech.in/"
+                            target="_blank"><strong>Digisphere</strong></a> All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end text-center">
+                    <div class="ahladafooter-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(function () {
+        // Team Slider
+        $('.sr-teams-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            arrows: false,
+            dots: false,
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
+        $('.team-prev').click(() => $('.sr-teams-slider').slick('slickPrev'));
+        $('.team-next').click(() => $('.sr-teams-slider').slick('slickNext'));
+
+        // Review Slider
+        $('.sr-review-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            arrows: false,
+            dots: false,
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
+        $('.review-prev').click(() => $('.sr-review-slider').slick('slickPrev'));
+        $('.review-next').click(() => $('.sr-review-slider').slick('slickNext'));
+    });
+</script>
+
+
+<script>
+    function showProductPage(id) {
+        // Hide brands section
+        document.getElementById('brandsSection').style.display = 'none';
+
+        // Hide all product pages
+        const pages = document.querySelectorAll('.product-page');
+        pages.forEach(page => page.style.display = 'none');
+
+        // Show selected product page
+        const page = document.getElementById(id);
+        if (page) {
+            page.style.display = 'block';
+        }
+    }
+
+    function goBack() {
+        // Hide all product pages
+        const pages = document.querySelectorAll('.product-page');
+        pages.forEach(page => page.style.display = 'none');
+
+        // Show brands section
+        document.getElementById('brandsSection').style.display = 'block';
+    }
+
+    function shareOnWhatsApp(productName) {
+        const message = `Check out this amazing paint product: ${productName}`;
+        const whatsappUrl = `https://wa.me/8019812939?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    }
+</script>
+
+</html>
