@@ -17,11 +17,7 @@ function openWhatsApp() {
         `PIN Code: ${pincode}%0A` +
         `Email: ${email}`;
 
-<<<<<<< HEAD
     let whatsappURL = `https://wa.me/918019812939${whatsappNumber}?text=${message}`;
-=======
-    let whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
->>>>>>> e1a5f85586a13617f6850df3a9a5babe957ed540
     window.open(whatsappURL, "_blank");
 }
 
@@ -74,11 +70,7 @@ document.getElementById("whatsappForm").addEventListener("submit", function (eve
 
     let message = `${bannerIntro}Name: ${name}%0AEmail: ${email}%0AMobile: ${mobile}%0APIN Code: ${pincode}%0AConstruction: ${construction}%0APainter Hired: ${painter}`;
 
-<<<<<<< HEAD
     let whatsappURL = `https://api.whatsapp.com/send?phone=918019812939&text=${message}`;
-=======
-    let whatsappURL = `https://api.whatsapp.com/send?phone=8019812939&text=${message}`;
->>>>>>> e1a5f85586a13617f6850df3a9a5babe957ed540
 
     window.open(whatsappURL, "_blank");
 });
@@ -138,11 +130,7 @@ function goBack() {
 
 function shareOnWhatsApp(productName) {
     const message = `Check out this paint product: ${productName}`;
-<<<<<<< HEAD
     const url = `https://wa.me/918019812939?text=${encodeURIComponent(message)}`;
-=======
-    const url = `https://wa.me/8019812939?text=${encodeURIComponent(message)}`;
->>>>>>> e1a5f85586a13617f6850df3a9a5babe957ed540
     window.open(url, '_blank');
 }
 
