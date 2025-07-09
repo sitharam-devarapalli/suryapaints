@@ -17,11 +17,7 @@ body {
 code,
 pre {
     font-family: var(--font-family-monospace);
-<<<<<<< HEAD
 } 
-=======
-}
->>>>>>> e1a5f85586a13617f6850df3a9a5babe957ed540
 
 /* Top Section Styles */
 .paintheaders-top {
@@ -3500,7 +3496,6 @@ pre {
     .ahladafooter-main .col-md-4 {
         padding: 0 30px;
     }
-<<<<<<< HEAD
 }
 
 
@@ -3618,6 +3613,3 @@ pre {
     padding: 14px;
   }
 }
-=======
-}
->>>>>>> e1a5f85586a13617f6850df3a9a5babe957ed540
