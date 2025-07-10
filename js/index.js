@@ -20,7 +20,7 @@ function openWhatsApp() {
     let whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(whatsappURL, "_blank");
 }
-
+ 
 
 // home page numbers count js
 document.addEventListener("DOMContentLoaded", function () {
@@ -161,6 +161,5 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
 
 
-// sub logos navigate the inner page js 
   
   

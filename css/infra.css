@@ -705,8 +705,9 @@ p {
 
 .infrahometeam-card p {
     margin: 0;
-    letter-spacing: 1px;
     font-weight: 500;
+    font-size: 14px;
+    color: #333;
 }
 
 /* Tablet view */
