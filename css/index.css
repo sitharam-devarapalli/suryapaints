@@ -1,23 +1,22 @@
-:root {
-    --font-family-sans-serif: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    --font-family-monospace: 'Fira Code', 'Courier New', monospace;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+/* Manrope Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: var(--font-family-sans-serif);
-    line-height: 1.6;
-    color: #333;
-    /* Optional: Sets a slightly lighter text color */
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-smooth: always;
 }
 
-code,
-pre {
-    font-family: var(--font-family-monospace);
-} 
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Paragraph Styles */
+p {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+}
 
 /* Top Section Styles */
 .paintheaders-top {
@@ -108,7 +107,7 @@ pre {
 
 /* Navbar Styles */
 .paintheaders-menu .nav-link {
-    color: #827979;
+    color: #000;
     margin: 0 10px;
     font-size: 16px;
     font-weight: 500;
@@ -383,13 +382,14 @@ pre {
 }
 
 .painthomeservices-left1 {
-    padding: 70px 0px;
+    padding: 20px 0px;
 }
 
 .painthomeservices-desc {
-    font-size: 18px;
+    font-size: 16px;
     color: #555;
     max-width: 500px;
+    text-align: justify;
 }
 
 .painthomeservices-card {
@@ -414,7 +414,7 @@ pre {
 
 .painthomeservices-card h4 {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
 }
 
@@ -732,222 +732,6 @@ pre {
     }
 }
 
-
-/* footer css  */
-/* Footer Styling */
-.painthomefooter-main {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-/* Top Footer */
-.painthomefooter-top {
-    background: linear-gradient(to right, #0a1b3a, #203c5c);
-    padding: 15px 50px;
-}
-
-.painthomefooter-logo img {
-    width: 130px;
-}
-
-.painthomefooter-logo span {
-    font-size: 14px;
-    display: block;
-}
-
-.painthomefooter-social a {
-    color: #fff;
-    font-size: 18px;
-    margin: 0 8px;
-    transition: 0.3s;
-}
-
-.painthomefooter-social a:hover {
-    color: #000;
-}
-
-.painthomefooter-contact {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    color: #fff;
-}
-
-.painthomefooter-contact i {
-    font-size: 20px;
-    margin-right: 8px;
-}
-
-.painthomefooter-contact strong {
-    font-size: 16px;
-}
-
-/* Middle Footer */
-.painthomefooter-middle {
-    padding: 30px 50px;
-    background-color: #0d1b2a;
-}
-
-.painthomefooter-middle h5 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.painthomefooter-middle ul {
-    list-style: none;
-    padding: 0;
-}
-
-.painthomefooter-middle ul li {
-    margin-bottom: 8px;
-}
-
-.painthomefooter-middle ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.painthomefooter-middle ul li a:hover {
-    color: #f1b800;
-}
-
-/* Bottom Footer */
-.painthomefooter-bottom {
-    padding: 20px 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    background: #0d1b2a;
-}
-
-.painthomefooter-bottom-1 {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.painthomefooter-bottom p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.painthomefooter-bottom a {
-    color: #f1b800;
-    text-decoration: none;
-}
-
-.painthomefooter-bottom a:hover {
-    text-decoration: underline;
-}
-
-/* Payment Logos */
-.painthomefooter-payment {
-    /* margin-top: 15px; */
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.painthomefooter-payment img {
-    height: 25px;
-    margin: 0 5px;
-}
-
-/* Responsive Design */
-
-/* Tablet (max-width: 992px) */
-@media (max-width: 992px) {
-    .painthomefooter-top {
-        padding: 15px 30px;
-        text-align: center;
-    }
-
-    .painthomefooter-contact {
-        justify-content: center;
-        margin-top: 10px;
-        font-size: 12px;
-    }
-
-    .painthomefooter-middle {
-        padding: 20px 30px;
-        text-align: start;
-    }
-
-    .painthomefooter-bottom {
-        padding: 20px 30px;
-    }
-
-    .painthomefooter-bottom-1 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .painthomefooter-payment {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .painthomefooter-contact strong {
-        font-size: 10px;
-    }
-}
-
-/* Mobile (max-width: 576px) */
-@media (max-width: 576px) {
-    .painthomefooter-top {
-        padding: 15px 20px;
-    }
-
-    .painthomefooter-contact strong {
-        font-size: 10px;
-    }
-
-    .painthomefooter-logo img {
-        width: 110px;
-    }
-
-    .painthomefooter-contact {
-        align-items: center;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .painthomefooter-middle {
-        padding: 20px;
-    }
-
-    .painthomefooter-middle h5 {
-        margin-top: 20px;
-    }
-
-    .painthomefooter-bottom {
-        padding: 20px;
-    }
-
-    .painthomefooter-payment {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .painthomefooter-payment img {
-        height: 20px;
-    }
-
-    .paintheaders-social {
-        display: none;
-    }
-
-    .paintheaders-phone {
-        display: none;
-    }
-
-    .paintheaders-top {
-        padding: 10px;
-        justify-content: center;
-    }
-}
-
 /* home paint brand css  */
 .painthomebrands-main1 {
     background: #ece5d7;
@@ -1163,7 +947,6 @@ pre {
 
 .painthomewhatsup-number {
     font-size: 34px;
-    font-family: serif;
     color: #000;
     margin: 0;
 }
@@ -1962,7 +1745,7 @@ pre {
 @media (max-width: 992px) {
     .painthomebanner {
         height: auto;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
     }
 
     .painthomebanner-form-wrapper {
@@ -2455,100 +2238,101 @@ pre {
 
 /* Section Background */
 .branches-section {
-  background: #f9f3e7;
-  padding:50px;
+    background: #f9f3e7;
+    padding: 50px;
 }
 
 /* Heading */
 .branches-heading {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
 .highlight-text {
-  color: #8a259b;
+    color: #8a259b;
 }
 
 /* Branch Card */
 .branch-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease;
-  text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    text-align: center;
 }
 
 .branch-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .branch-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .branch-card p {
-  font-size: 15px;
-  margin: 8px 0;
-  color: #444;
+    font-size: 15px;
+    margin: 8px 0;
+    color: #444;
 }
+
 .painthomebranches-description a,
 .painthomebranches-description-1 a {
-  color: #444;
-  text-decoration: none;
-  transition: 0.3s;
+    color: #444;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .painthomebranches-description a:hover,
 .painthomebranches-description-1 a:hover {
-  color: #8a259b;
-  text-decoration: none;
+    color: #8a259b;
+    text-decoration: none;
 }
 
 /* Button Style */
 .branch-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 16px;
-  background: #8a259b;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s ease;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #8a259b;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
 .branch-btn:hover {
-  background: #022179;
-  color: #fff;
+    background: #022179;
+    color: #fff;
 }
 
 /* Responsive Design */
 @media (max-width: 767px) {
-  .branches-heading {
-    font-size: 24px;
-  }
+    .branches-heading {
+        font-size: 24px;
+    }
 
-  .branch-card {
-    padding: 20px;
-  }
+    .branch-card {
+        padding: 20px;
+    }
 
-  .branch-title {
-    font-size: 18px;
-  }
+    .branch-title {
+        font-size: 18px;
+    }
 
-  .branch-card p {
-    font-size: 14px;
-  }
+    .branch-card p {
+        font-size: 14px;
+    }
 
-  .branch-btn {
-    font-size: 14px;
-  }
+    .branch-btn {
+        font-size: 14px;
+    }
 }
 
 /* upcomming branch's section css  */
@@ -3253,7 +3037,6 @@ pre {
 .ahladafooter-main {
     background: linear-gradient(135deg, #0d1b2a, #1a1a1a);
     color: #ffffff;
-    font-family: 'Segoe UI', sans-serif;
     padding: 60px 20px 30px;
 }
 
@@ -3420,9 +3203,11 @@ pre {
         justify-content: start;
         text-align: left;
     }
-.ahladafooter-links li{
-    text-align: start;
-}
+
+    .ahladafooter-links li {
+        text-align: start;
+    }
+
     .ahladafooter-contact i {
         margin-top: 0;
     }
@@ -3501,99 +3286,102 @@ pre {
 
 /* our services section css  */
 .paints-services-section {
-  background-color: #fff;
-  padding: 50px;
+    background-color: #fff;
+    padding: 50px;
 }
 
 /* Sidebar Styles */
 .paint-sidebar-section {
-  background: #F4EDE4;
-  padding: 25px;
-  border-radius: 8px;
-  margin-bottom: 30px;
+    background: #F4EDE4;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .paints-services-section .list-group-item {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 16px 20px;
-  border: none;
-  border-left: 4px solid transparent;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-  color: #333;
-  background: #fff;
-  border-radius: 6px;
-  cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 20px;
+    border: none;
+    border-left: 4px solid transparent;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    color: #333;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .paints-services-section .list-group-item:hover {
-  border-left: 4px solid #f0ad4e;
-  background-color: #fff;
-  color: #f0ad4e;
+    border-left: 4px solid #f0ad4e;
+    background-color: #fff;
+    color: #f0ad4e;
 }
 
 .paints-services-section .list-group-item.active {
-  border-left: 4px solid #f0ad4e !important;
-  background-color: #fffbe6;
-  color: #f0ad4e;
-  font-weight: 700;
-  box-shadow: inset 0 0 0 1px #ccc;
+    border-left: 4px solid #f0ad4e !important;
+    background-color: #fffbe6;
+    color: #f0ad4e;
+    padding: 16px 20px;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 1px #ccc;
 }
 
 /* Call Box Section */
 .call-box-design {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  margin-bottom: 25px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .call-box-img-wrapper {
-  height: 200px;
-  position: relative;
+    height: 200px;
+    position: relative;
 }
 
 .callbox-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
 }
 
 
 .call-box-info {
-  background: linear-gradient(160deg, #f0ad4e 50%, #f0ad4e 50%);
-  padding: 30px 0 20px;
-  position: relative;
-  text-align: center;
+    background: linear-gradient(160deg, #f0ad4e 50%, #f0ad4e 50%);
+    padding: 30px 0 20px;
+    position: relative;
+    text-align: center;
 }
 
 .call-box-info a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .call-box-info a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Catalog Button */
 .paints-catalog-download {
-  background: #F4EDE4 !important;
-  border-radius: 8px;
+    background: #F4EDE4 !important;
+    border-radius: 8px;
 }
+
 .paints-catalog-download:hover {
-  background: #eee6c0 !important;
+    background: #eee6c0 !important;
 }
 
 /* Service Number */
 .service-number {
-  font-size: 28px;
-  font-weight: bold;
-  color: #f0ad4e;
+    font-size: 28px;
+    font-weight: bold;
+    color: #f0ad4e;
 }
+
 .paint-service-imgs {
     width: 100%;
     height: 300px;
@@ -3603,22 +3391,83 @@ pre {
     display: block;
 }
 
-/* Responsive Adjustments */
+/* Tablet View: 768px to 991.98px */
+@media (max-width: 991.98px) {
+    .paints-services-section {
+        padding: 40px 20px;
+    }
+
+    .paint-sidebar-section {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .paints-services-section .list-group-item {
+        font-size: 14px;
+        padding: 14px 18px;
+        margin-bottom: 8px;
+    }
+
+    .paint-service-imgs {
+        height: 260px;
+    }
+
+    .call-box-img-wrapper {
+        height: 180px;
+    }
+
+    .call-box-info {
+        padding: 24px 0 16px;
+    }
+
+    .service-number {
+        font-size: 24px;
+    }
+
+    .call-icon-box .icon {
+        padding: 14px;
+    }
+}
+
+/* Mobile View: ≤767.98px */
 @media (max-width: 767.98px) {
-  .paints-services-section {
-    padding: 30px 15px;
-  }
+    .paints-services-section {
+        padding: 10px;
+    }
 
-  .call-box-info {
-    padding: 30px 0 15px;
-  }
+    .paint-sidebar-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
 
-  .call-icon-box .icon {
-    padding: 12px;
-  }
+    .paints-services-section .list-group-item {
+        font-size: 16px;
+        padding: 12px 14px;
+        margin-bottom: 6px;
+    }
 
-  .paints-services-section .list-group-item {
-    font-size: 16px;
-    padding: 14px;
-  }
+    .paint-service-imgs {
+        height: 220px;
+    }
+
+    .call-box-img-wrapper {
+        height: 160px;
+    }
+
+    .call-box-info {
+        padding: 20px 0 12px;
+    }
+
+    .service-number {
+        font-size: 22px;
+    }
+
+    .call-icon-box .icon {
+        padding: 12px;
+    }
+
+    .paints-catalog-download {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
 }

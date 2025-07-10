@@ -26,9 +26,9 @@
             </div>
 
             <div class="paintheaders-middle">
-                <a href="index.html"><img src="img/sp logo.png" alt="Logo 1" class="logo-sp"></a>
-                <a href="interiorhome.html"><img src="img/sds logo.png" alt="Logo 2"></a>
-                <a href="infrahome.html"><img src="img/infra-logo.png" alt="Logo 3" class="logo-infa"></a>
+                <a href="suryapaints.html"><img src="img/sp logo.png" alt="Logo 1" class="logo-sp"></a>
+                <a href="suryadesignerstudio.html"><img src="img/sds logo.png" alt="Logo 2"></a>
+                <a href="suryainfra.html"><img src="img/infra-logo.png" alt="Logo 3" class="logo-infa"></a>
             </div>
 
             <div class="paintheaders-social">
@@ -41,7 +41,7 @@
         <!-- Bottom Section (Responsive Navbar) -->
         <nav class="navbar navbar-expand-lg paintheaders-bottom">
             <div class="container-fluid">
-                <a class="navbar-brand paintheaders-logo-1" href="index.html">
+                <a class="navbar-brand paintheaders-logo-1" href="suryapaints.html">
                     <img src="img/sp logo.png" alt="Right Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -49,7 +49,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav mx-auto paintheaders-menu">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="suryapaints.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="sales.html">Sales & Brands</a></li>
                         <li class="nav-item"><a class="nav-link" href="ourservices.html">Our Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="paintcontact.html">About Us</a></li>
@@ -134,7 +134,7 @@
                     </div>
 
                     <!-- Catalog Download Button -->
-                    <div class="text-center mt-2">
+                    <div class="text-center mt-2 mb-4">
                         <a href="downloads/company-profile.pdf"
                             class="btn d-flex align-items-center justify-content-center gap-4 px-4 py-2 paints-catalog-download">
                             <i class="fas fa-download text-warning"></i>
@@ -145,8 +145,8 @@
 
                 <!-- Sidebar Content -->
                 <!-- Right Content Area -->
-                <div class="col-md-8">
-                    <div class="service-content">
+                <div class="col-md-8 ">
+                    <div class="service-content ">
                         <img src="img/interior-walls.webp" alt="Room Wallpapers" class="paint-service-imgs mb-3"
                             id="serviceImage">
                         <div id="serviceText" class="text-muted"></div>
@@ -177,7 +177,7 @@
                 <div class="col-md-4">
                     <h5 class="ahladafooter-title">Quick Links</h5>
                     <ul class="ahladafooter-links">
-                        <li><a href="index.html">+ Home</a></li>
+                        <li><a href="suryapaints.html">+ Home</a></li>
                         <li><a href="paintcontact.html">+ About Us</a></li>
                         <li><a href="ourservices.html">+ Our Services</a></li>
                         <li><a href="sales.html">+ Sales & Brands</a></li>
@@ -351,6 +351,26 @@
     // ✅ Trigger default content on page load (first menu item)
     document.addEventListener('DOMContentLoaded', () => {
         menuItems[0].click();  // This will load the first service on initial load
+    });
+</script>
+
+<script>
+    // Run on page load
+    window.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedService = urlParams.get('service');
+
+        if (selectedService) {
+            const menuItems = document.querySelectorAll('#serviceMenu .list-group-item');
+            menuItems.forEach(item => {
+                if (item.textContent.trim() === selectedService) {
+                    item.click(); // Trigger the matching menu item
+                }
+            });
+        } else {
+            // Fallback: load the first one
+            document.querySelector('#serviceMenu .list-group-item').click();
+        }
     });
 </script>
 
