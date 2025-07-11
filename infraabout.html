@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-Tl1JD6TgQ71DJSMSa13ZyTt6vXkJX8HPzklNkCh9qGUPD9LwnhCztB6Yk0Hp/Mqzr7yJ5mu4CunG4VwJX++0ew=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -190,58 +192,63 @@
                 <h2 class="fw-bold">Expert Team Persons</h2>
             </div>
 
-            <div class="row justify-content-center gy-4">
-                <!-- Team Member 1 -->
-                <div class="col-6 col-md-3">
-                    <div class="infrahometeam-card">
-                        <img src="img/ceo_picture.webp" alt="Leslie Alexander"
-                            class="img-fluid infrahometeam-img rounded-circle mb-3">
-                        <h5 class="fw-semibold">Ravi Teja</h5>
-                        <p class="small">Founder & Ceo</p>
+            <!-- Swiper Container -->
+            <div class="swiper infrahometeam-slider">
+                <div class="swiper-wrapper">
+                    <!-- Repeat for each team member -->
+                    <div class="swiper-slide">
+                        <div class="infrahometeam-card">
+                            <img src="img/ceo_picture.webp" alt="Ravi Teja"
+                                class="img-fluid infrahometeam-img rounded-circle mb-3">
+                            <h5 class="fw-semibold">Ravi Teja</h5>
+                            <p class="small">Founder & CEO</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="infrahometeam-card">
+                            <img src="img/ourteam2.png" alt="Pavan"
+                                class="img-fluid infrahometeam-img rounded-circle mb-3">
+                            <h5 class="fw-semibold">Pavan</h5>
+                            <p class="small">Operator</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="infrahometeam-card">
+                            <img src="img/ourteam1.png" alt="Prasad"
+                                class="img-fluid infrahometeam-img rounded-circle mb-3">
+                            <h5 class="fw-semibold">Prasad</h5>
+                            <p class="small">Contractor</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="infrahometeam-card">
+                            <img src="img/ourteam2.png" alt="Rakesh"
+                                class="img-fluid infrahometeam-img rounded-circle mb-3">
+                            <h5 class="fw-semibold">Rakesh</h5>
+                            <p class="small">Civil Engineer</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="infrahometeam-card">
+                            <img src="img/ourteam2.png" alt="Balaram"
+                                class="img-fluid infrahometeam-img rounded-circle mb-3">
+                            <h5 class="fw-semibold">Balaram</h5>
+                            <p class="small">Civil Engineer</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Team Member 2 -->
-                <div class="col-6 col-md-3">
-                    <div class="infrahometeam-card">
-                        <img src="img/ourteam2.png" alt="Sabrina Park"
-                            class="img-fluid infrahometeam-img rounded-circle mb-3">
-                        <h5 class="fw-semibold">Pavan</h5>
-                        <p class="small">Operater</p>
-                    </div>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="col-6 col-md-3">
-                    <div class="infrahometeam-card">
-                        <img src="img/ourteam1.png" alt="Lucy Boynton"
-                            class="img-fluid infrahometeam-img rounded-circle mb-3">
-                        <h5 class="fw-semibold">Prasad</h5>
-                        <p class="small">Contractor</p>
-                    </div>
-                </div>
-
-                <!-- Team Member 4 -->
-                <div class="col-6 col-md-3">
-                    <div class="infrahometeam-card">
-                        <img src="img/ourteam2.png" alt="New Member"
-                            class="img-fluid infrahometeam-img rounded-circle mb-3">
-                        <h5 class="fw-semibold">Rakesh</h5>
-                        <p class="small">Civil Engineer</p>
-                    </div>
-                </div>
-                <!-- Team Member 5 -->
-                <div class="col-6 col-md-3">
-                    <div class="infrahometeam-card">
-                        <img src="img/ourteam2.png" alt="New Member"
-                            class="img-fluid infrahometeam-img rounded-circle mb-3">
-                        <h5 class="fw-semibold">Balaram</h5>
-                        <p class="small">Civil Engineer</p>
-                    </div>
-                </div>
+                <!-- Navigation Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
+
 
     <!-- contact us section  -->
     <div class="container-fluid infrahomecontact-wrapper py-5 px-5">
@@ -438,6 +445,8 @@
 <script src="js/infra.js"></script>
 <script src="js/interior.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
 <!-- contact form js  -->
 <script>
@@ -473,5 +482,29 @@
     });
 </script>
 
+<script>
+    var teamSwiper = new Swiper(".infrahometeam-slider", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            576: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 3
+            },
+            992: {
+                slidesPerView: 4
+            }
+        }
+    });
+</script>
 
 </html>

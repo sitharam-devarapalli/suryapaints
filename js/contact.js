@@ -49,36 +49,6 @@ document.querySelectorAll('.yesNo').forEach(btn => {
 });
 
 
-// review and teams section js in surya paints
-$(function () {
-    // Team Slider
-    $('.sr-teams-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: false,
-        dots: false,
-        responsive: [
-            { breakpoint: 992, settings: { slidesToShow: 2 } },
-            { breakpoint: 576, settings: { slidesToShow: 1 } }
-        ]
-    });
-    $('.team-prev').click(() => $('.sr-teams-slider').slick('slickPrev'));
-    $('.team-next').click(() => $('.sr-teams-slider').slick('slickNext'));
 
-    // Review Slider
-    $('.sr-review-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: false,
-        dots: false,
-        responsive: [
-            { breakpoint: 992, settings: { slidesToShow: 2 } },
-            { breakpoint: 576, settings: { slidesToShow: 1 } }
-        ]
-    });
-    $('.review-prev').click(() => $('.sr-review-slider').slick('slickPrev'));
-    $('.review-next').click(() => $('.sr-review-slider').slick('slickNext'));
-});
+
 
