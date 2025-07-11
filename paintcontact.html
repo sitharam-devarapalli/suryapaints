@@ -63,9 +63,7 @@
                         <li class="nav-item"><a class="nav-link" href="catalog.html">Our Works</a></li>
                     </ul>
                     <div class="d-flex gap-2">
-                        <a href="#" class="paintheaders-button Book-free-site-open">
-                            Book Slot <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="#" class="paintheaders-button">Book Slot<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -493,37 +491,10 @@
                     </form>
                 </div>
             </div>
+
+
         </div>
     </section>
-
-    <!-- popup book visit site code  -->
-    <div class="book-free-site-popup" id="popupForm">
-        <div class="book-free-site-content">
-            <span class="book-free-site-close">&times;</span>
-            <h2>Let our experts help you!</h2>
-
-            <form>
-                <input type="text" placeholder="Your Full Name" autocomplete="name" required>
-                <input type="email" placeholder="Eg: myname@gmail.com" autocomplete="email" required>
-                <input type="tel" placeholder="10 digits" autocomplete="tel" required>
-                <input type="text" placeholder="6 digit PIN code" autocomplete="postal-code" required>
-
-                <div class="yes-no-question">
-                    <p>Have you started renovating your home?</p>
-                    <button type="button" class="yesNo">Yes</button>
-                    <button type="button" class="yesNo">No</button>
-                </div>
-
-                <div class="yes-no-question">
-                    <p>Have you hired a local painter?</p>
-                    <button type="button" class="yesNo">Yes</button>
-                    <button type="button" class="yesNo">No</button>
-                </div>
-
-                <button type="submit" class="Book-free-site-submit">Book free site visit</button>
-            </form>
-        </div>
-    </div>
 
     <!-- footer code  -->
     <footer class="ahladafooter-main">
@@ -612,7 +583,6 @@
 
 
 </body>
-<script src="js/contact.js"></script>
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!-- Slick Carousel -->
@@ -621,6 +591,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Your custom scripts -->
 <script src="js/index.js"></script>
+<script src="js/contact.js"></script>
 
 <script>
     document.getElementById("contactForm").addEventListener("submit", function (e) {
@@ -650,6 +621,40 @@ Message: ${message}`;
         // Open WhatsApp chat
         const url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
         window.open(url, "_blank");
+    });
+</script>
+
+<script>
+    $(function () {
+        // Team Slider
+        $('.sr-teams-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            arrows: false,
+            dots: false,
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
+        $('.team-prev').click(() => $('.sr-teams-slider').slick('slickPrev'));
+        $('.team-next').click(() => $('.sr-teams-slider').slick('slickNext'));
+
+        // Review Slider
+        $('.sr-review-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            arrows: false,
+            dots: false,
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
+        $('.review-prev').click(() => $('.sr-review-slider').slick('slickPrev'));
+        $('.review-next').click(() => $('.sr-review-slider').slick('slickNext'));
     });
 </script>
 

@@ -10,7 +10,7 @@ function openWhatsApp() {
         return;
     }
 
-    let whatsappNumber = "8019812939"; // Set your fixed WhatsApp number
+    let whatsappNumber = "918019812939"; // Set your fixed WhatsApp number
     let message = `Hello, I want to book a free site visit. Here are my details:%0A%0A` +
         `Name: ${name}%0A` +
         `Mobile: ${mobile}%0A` +
@@ -70,7 +70,7 @@ document.getElementById("whatsappForm").addEventListener("submit", function (eve
 
     let message = `${bannerIntro}Name: ${name}%0AEmail: ${email}%0AMobile: ${mobile}%0APIN Code: ${pincode}%0AConstruction: ${construction}%0APainter Hired: ${painter}`;
 
-    let whatsappURL = `https://api.whatsapp.com/send?phone=8019812939&text=${message}`;
+    let whatsappURL = `https://api.whatsapp.com/send?phone=918019812939&text=${message}`;
 
     window.open(whatsappURL, "_blank");
 });
@@ -94,13 +94,6 @@ document.querySelectorAll('.painthomefaqs-question').forEach((btn) => {
     });
 });
 
-
-// review section js 
-var myCarousel = new bootstrap.Carousel(document.getElementById('painthomereview-carousel'), {
-    interval: 3000, // Slide every 4 seconds
-    wrap: true,
-    pause: false
-});
 
 
 
@@ -130,34 +123,11 @@ function goBack() {
 
 function shareOnWhatsApp(productName) {
     const message = `Check out this paint product: ${productName}`;
-    const url = `https://wa.me/8019812939?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/918019812939?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
 }
 
 
-
-// contact us client mail code 
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
-
-    // Collect form data
-    var firstName = document.getElementById("first_name").value;
-    var lastName = document.getElementById("last_name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
-
-    // Construct the mailto URL
-    var mailtoLink = "mailto:suryapaintseluru@gmail.com?subject=Contact%20Form%20Submission&body=" +
-        "First%20Name%3A%20" + encodeURIComponent(firstName) + "%0D%0A" +
-        "Last%20Name%3A%20" + encodeURIComponent(lastName) + "%0D%0A" +
-        "Email%3A%20" + encodeURIComponent(email) + "%0D%0A" +
-        "Phone%3A%20" + encodeURIComponent(phone) + "%0D%0A" +
-        "Message%3A%20" + encodeURIComponent(message);
-
-    // Open the email client
-    window.location.href = mailtoLink;
-});
 
 
 
