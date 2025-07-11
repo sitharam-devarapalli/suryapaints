@@ -408,7 +408,7 @@
                 <p class="painthomepic1-para">Unleash your creativity and style with the luxurious range of Royale
                     Collections.
                 </p>
-                <a href="#" class="painthomepic1-btn">Get Inspired →</a>
+                <a href="#" class="painthomepic1-btn">Get Inspired</a>
             </div>
         </div>
     </div>
@@ -478,39 +478,31 @@
     </div>
 
     <!-- Appointment Form -->
-    <div class="container-fluid my-5 px-5">
-        <div class="row align-items-center paintappointment">
-            <!-- Left Content -->
-            <div class="col-md-5">
-                <h2>Book Your Appointment</h2>
-                <p>Bid goodbye to your home painting hassles with our expert supervision.</p>
-            </div>
+    <div class="book-free-site-popup" id="popupForm" style="display: none;">
+        <div class="book-free-site-content">
+            <span class="book-free-site-close">&times;</span>
+            <h2>Let our experts help you!</h2>
 
-            <!-- Right Form -->
-            <div class="col-md-7">
-                <div class="row g-3">
-                    <div class="col-md-6 paintappointment-input">
-                        <label class="form-label">Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-                    </div>
-                    <div class="col-md-6 paintappointment-input">
-                        <label class="form-label">Mobile Number</label>
-                        <input type="tel" id="mobile" class="form-control" placeholder="+91 *********" required>
-                    </div>
-                    <div class="col-md-6 paintappointment-input">
-                        <label class="form-label">PIN Code </label>
-                        <input type="text" id="pincode" class="form-control" placeholder="Enter PIN Code" required>
-                    </div>
-                    <div class="col-md-6 paintappointment-input">
-                        <label class="form-label">Email </label>
-                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                    </div>
+            <form id="whatsappForm">
+                <input type="text" id="name" placeholder="Your Full Name" required>
+                <input type="email" id="email" placeholder="Eg: myname@gmail.com" required>
+                <input type="tel" id="mobile" placeholder="10 digits" required>
+                <input type="text" id="pincode" placeholder="6 digit PIN code" required>
+
+                <div class="yes-no-question">
+                    <p>Have you started renovating your home?</p>
+                    <button type="button" class="yesNo" data-q="renovation" data-a="Yes">Yes</button>
+                    <button type="button" class="yesNo" data-q="renovation" data-a="No">No</button>
                 </div>
-                <!-- Button -->
-                <button class="btn btn-appointment mt-3" onclick="openWhatsApp()">
-                    Book an appointment
-                </button>
-            </div>
+
+                <div class="yes-no-question">
+                    <p>Have you hired a local painter?</p>
+                    <button type="button" class="yesNo" data-q="painter" data-a="Yes">Yes</button>
+                    <button type="button" class="yesNo" data-q="painter" data-a="No">No</button>
+                </div>
+
+                <button type="submit" class="Book-free-site-submit">Book free site visit</button>
+            </form>
         </div>
     </div>
 
@@ -601,29 +593,28 @@
             <span class="book-free-site-close">&times;</span>
             <h2>Let our experts help you!</h2>
 
-            <form id="whatsappForm">
-                <input type="text" id="name" placeholder="Your Full Name" required>
-                <input type="email" id="email" placeholder="Eg: myname@gmail.com" required>
-                <input type="tel" id="mobile" placeholder="10 digits" required>
-                <input type="text" id="pincode" placeholder="6 digit PIN code" required>
+            <form>
+                <input type="text" placeholder="Your Full Name" autocomplete="name" required>
+                <input type="email"placeholder="Eg: myname@gmail.com" autocomplete="email" required>
+                <input type="tel"  placeholder="10 digits" autocomplete="tel" required>
+                <input type="text" placeholder="6 digit PIN code" autocomplete="postal-code" required>
 
                 <div class="yes-no-question">
                     <p>Have you started renovating your home?</p>
-                    <button type="button" class="yesNo" data-q="renovation" data-a="Yes">Yes</button>
-                    <button type="button" class="yesNo" data-q="renovation" data-a="No">No</button>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
                 </div>
 
                 <div class="yes-no-question">
                     <p>Have you hired a local painter?</p>
-                    <button type="button" class="yesNo" data-q="painter" data-a="Yes">Yes</button>
-                    <button type="button" class="yesNo" data-q="painter" data-a="No">No</button>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
                 </div>
 
                 <button type="submit" class="Book-free-site-submit">Book free site visit</button>
             </form>
         </div>
     </div>
-
 
     <!-- footer code  -->
     <footer class="ahladafooter-main">
@@ -713,32 +704,9 @@
 
 
 </body>
-<script src="js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    document.querySelector('.Book-free-site-open').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.getElementById('popupForm').style.display = 'flex';
-    });
-
-    document.querySelector('.book-free-site-close').addEventListener('click', function () {
-        document.getElementById('popupForm').style.display = 'none';
-    });
-
-    document.getElementById('whatsappForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const mobile = document.getElementById('mobile').value.trim();
-        const pincode = document.getElementById('pincode').value.trim();
-
-        let message = `Hello, I want to book a free site visit.\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nPIN Code: ${pincode}`;
-
-        const whatsappURL = `https://wa.me/918019812939?text=${encodeURIComponent(message)}`;
-        window.open(whatsappURL, '_blank');
-    });
-</script>
+<script src="js/contact.js"></script>
+<script src="js/index.js"></script>
 
 
 </html>

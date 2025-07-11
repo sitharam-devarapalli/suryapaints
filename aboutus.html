@@ -64,8 +64,9 @@
                         <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
                     </ul>
                     <div class="d-flex gap-2">
-                        <!-- <button class="paintheaders-button">Surya Paint</button> -->
-                        <a href="#" class="paintheaders-button">Book Slot<i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="paintheaders-button Book-free-site-open">
+                            Book Slot <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -198,10 +199,12 @@
                     <div class="row mb-12">
                         <div class="col-12">
                             <p class="interiorhomecontectteam-text2"><i
-                                    class="fas fa-map-marker-alt text-danger me-2"></i>Surya Paints, Near, Satrampadu Rd, Satrampadu, Eluru, Andhra Pradesh 534007.</p>
-                            <p class="interiorhomecontectteam-text2"><i class="fas fa-phone text-danger me-2"></i> +91 8019812939</p>
-                            <p class="interiorhomecontectteam-text2"><i
-                                    class="fas fa-envelope text-danger me-2"></i> suryapaintseluru@gmail.com</p>
+                                    class="fas fa-map-marker-alt text-danger me-2"></i>Surya Paints, Near, Satrampadu
+                                Rd, Satrampadu, Eluru, Andhra Pradesh 534007.</p>
+                            <p class="interiorhomecontectteam-text2"><i class="fas fa-phone text-danger me-2"></i> +91
+                                8019812939</p>
+                            <p class="interiorhomecontectteam-text2"><i class="fas fa-envelope text-danger me-2"></i>
+                                suryapaintseluru@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -240,6 +243,35 @@
             </div>
         </div>
     </section>
+
+    <!-- popup book visit site code  -->
+    <div class="book-free-site-popup" id="popupForm">
+        <div class="book-free-site-content">
+            <span class="book-free-site-close">&times;</span>
+            <h2>Let our experts help you!</h2>
+
+            <form>
+                <input type="text" placeholder="Your Full Name" autocomplete="name" required>
+                <input type="email" placeholder="Eg: myname@gmail.com" autocomplete="email" required>
+                <input type="tel" placeholder="10 digits" autocomplete="tel" required>
+                <input type="text" placeholder="6 digit PIN code" autocomplete="postal-code" required>
+
+                <div class="yes-no-question">
+                    <p>Have you started renovating your home?</p>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
+                </div>
+
+                <div class="yes-no-question">
+                    <p>Have you hired a local painter?</p>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
+                </div>
+
+                <button type="submit" class="Book-free-site-submit">Book free site visit</button>
+            </form>
+        </div>
+    </div>
 
     <!-- footer code  -->
     <footer class="ahladafooter-main">
@@ -330,32 +362,42 @@
 
 
 </body>
+<script src="js/contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/interior.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 <!-- contact form js code  -->
 <script>
     document.getElementById("contactForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
 
-        // Collect form data
-        var firstName = document.getElementById("firstname").value;
-        var lastName = document.getElementById("lastname").value;
-        var email = document.getElementById("email").value;
-        var phone = document.getElementById("number").value;
-        var message = document.getElementById("message").value;
+        // Get input values
+        var firstName = document.getElementById("firstname").value.trim();
+        var lastName = document.getElementById("lastname").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var phone = document.getElementById("number").value.trim();
+        var message = document.getElementById("message").value.trim();
 
-        // Construct the mailto URL
-        var mailtoLink = "mailto:suryapaintseluru@gmail.com?subject=Contact%20Form%20Submission&body=" +
-            "First%20Name%3A%20" + encodeURIComponent(firstName) + "%0D%0A" +
-            "Last%20Name%3A%20" + encodeURIComponent(lastName) + "%0D%0A" +
-            "Email%3A%20" + encodeURIComponent(email) + "%0D%0A" +
-            "Phone%3A%20" + encodeURIComponent(phone) + "%0D%0A" +
-            "Message%3A%20" + encodeURIComponent(message);
+        // Validate inputs
+        if (!firstName || !lastName || !email || !phone || !message) {
+            alert("Please fill out all fields.");
+            return;
+        }
 
-        // Open the email client
-        window.location.href = mailtoLink;
+        // WhatsApp message formatting
+        var whatsappMessage =
+            `Hello Surya Designer Studio,%0A` +
+            `First Name: ${encodeURIComponent(firstName)}%0A` +
+            `Last Name: ${encodeURIComponent(lastName)}%0A` +
+            `Email: ${encodeURIComponent(email)}%0A` +
+            `Phone: ${encodeURIComponent(phone)}%0A` +
+            `Message: ${encodeURIComponent(message)}`;
+
+        // WhatsApp number (replace with your desired business number)
+        var whatsappNumber = "918019812939"; // India number format without '+' or spaces
+
+        // Open WhatsApp chat in new tab
+        window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, "_blank");
     });
 </script>
 

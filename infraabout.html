@@ -62,8 +62,9 @@
                         <li class="nav-item"><a class="nav-link" href="infraabout.html">About Us</a></li>
                     </ul>
                     <div class="d-flex gap-2">
-                        <!-- <button class="paintheaders-button">Surya Paint</button> -->
-                        <a href="#" class="paintheaders-button">Book Slot<i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="paintheaders-button Book-free-site-open">
+                            Book Slot <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -302,13 +303,47 @@
                     </div>
 
                     <div class="mt-4">
-                        <a href="https://www.facebook.com/profile.php?id=100063940239773&mibextid=qi2Omg&rdid=FVZHr6Yun5MSwEgx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CRGNJrDJc%2F%3Fmibextid%3Dqi2Omg#" class="btn btn-warning btn-sm me-1" target="_blank"><i  class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/suryasdesignstudio/" target="_blank" class="btn btn-warning btn-sm me-1"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@SuryaDesignerStudio" class="btn btn-warning btn-sm me-1" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://wa.me/918019812939" class="btn btn-warning btn-sm me-1" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100063940239773&mibextid=qi2Omg&rdid=FVZHr6Yun5MSwEgx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CRGNJrDJc%2F%3Fmibextid%3Dqi2Omg#"
+                            class="btn btn-warning btn-sm me-1" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/suryasdesignstudio/" target="_blank"
+                            class="btn btn-warning btn-sm me-1"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@SuryaDesignerStudio" class="btn btn-warning btn-sm me-1"
+                            target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/918019812939" class="btn btn-warning btn-sm me-1" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- popup book visit site code  -->
+    <div class="book-free-site-popup" id="popupForm">
+        <div class="book-free-site-content">
+            <span class="book-free-site-close">&times;</span>
+            <h2>Let our experts help you!</h2>
+
+            <form>
+                <input type="text" placeholder="Your Full Name" autocomplete="name" required>
+                <input type="email" placeholder="Eg: myname@gmail.com" autocomplete="email" required>
+                <input type="tel" placeholder="10 digits" autocomplete="tel" required>
+                <input type="text" placeholder="6 digit PIN code" autocomplete="postal-code" required>
+
+                <div class="yes-no-question">
+                    <p>Have you started renovating your home?</p>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
+                </div>
+
+                <div class="yes-no-question">
+                    <p>Have you hired a local painter?</p>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
+                </div>
+
+                <button type="submit" class="Book-free-site-submit">Book free site visit</button>
+            </form>
         </div>
     </div>
 
@@ -398,6 +433,7 @@
 
 
 </body>
+<script src="js/contact.js"></script>
 <script src="js/index.js"></script>
 <script src="js/infra.js"></script>
 <script src="js/interior.js"></script>
@@ -406,26 +442,36 @@
 <!-- contact form js  -->
 <script>
     document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault();
 
-        // Collect form data
-        var firstName = document.getElementById("firstname").value;
-        var lastName = document.getElementById("lastname").value;
-        var phone = document.getElementById("phone").value;
-        var email = document.getElementById("mail").value;
-        var message = document.getElementById("message").value;
+        // Get form data
+        var firstName = document.getElementById("firstname").value.trim();
+        var lastName = document.getElementById("lastname").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var email = document.getElementById("mail").value.trim();
+        var message = document.getElementById("message").value.trim();
 
-        // Construct the mailto URL
-        var mailtoLink = "mailto:suryapaintseluru@gmail.com?subject=Contact%20Form%20Submission&body=" +
-            "First%20Name%3A%20" + encodeURIComponent(firstName) + "%0D%0A" +
-            "Last%20Name%3A%20" + encodeURIComponent(lastName) + "%0D%0A" +
-            "Phone%3A%20" + encodeURIComponent(phone) + "%0D%0A" +
-            "Email%3A%20" + encodeURIComponent(email) + "%0D%0A" +
-            "Message%3A%20" + encodeURIComponent(message);
+        // Check if any field is empty
+        if (!firstName || !lastName || !phone || !email || !message) {
+            alert("Please fill out all fields.");
+            return;
+        }
 
-        // Open the email client
-        window.location.href = mailtoLink;
+        // Format WhatsApp message
+        var whatsappMessage =
+            `Hello Surya Infra,%0A` +
+            `First Name: ${encodeURIComponent(firstName)}%0A` +
+            `Last Name: ${encodeURIComponent(lastName)}%0A` +
+            `Phone: ${encodeURIComponent(phone)}%0A` +
+            `Email: ${encodeURIComponent(email)}%0A` +
+            `Message: ${encodeURIComponent(message)}`;
+
+        // WhatsApp number (update if needed)
+        var whatsappNumber = "918019812939";
+        // Open WhatsApp with message
+        window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, "_blank");
     });
 </script>
+
 
 </html>

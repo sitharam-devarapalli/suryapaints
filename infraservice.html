@@ -59,8 +59,9 @@
                         <li class="nav-item"><a class="nav-link" href="infraabout.html">About Us</a></li>
                     </ul>
                     <div class="d-flex gap-2">
-                        <!-- <button class="paintheaders-button">Surya Paint</button> -->
-                        <a href="#" class="paintheaders-button">Book Slot<i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="paintheaders-button Book-free-site-open">
+                            Book Slot <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -113,7 +114,8 @@
                     <p>Stay connected with us on social media</p>
                     <ul class="list-unstyled">
                         <li><a href="https://www.instagram.com/suryasdesignstudio/" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/profile.php?id=100063940239773&mibextid=qi2Omg&rdid=FVZHr6Yun5MSwEgx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CRGNJrDJc%2F%3Fmibextid%3Dqi2Omg#" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100063940239773&mibextid=qi2Omg&rdid=FVZHr6Yun5MSwEgx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CRGNJrDJc%2F%3Fmibextid%3Dqi2Omg#"
+                                target="_blank">Facebook</a></li>
                         <li><a href="https://wa.me/918019812939" target="_blank">WhatsApp</a></li>
                         <li><a href="https://www.youtube.com/@SuryaDesignerStudio" target="_blank">YouTube</a></li>
                     </ul>
@@ -332,6 +334,35 @@
         </div>
     </section>
 
+    <!-- popup book visit site code  -->
+    <div class="book-free-site-popup" id="popupForm">
+        <div class="book-free-site-content">
+            <span class="book-free-site-close">&times;</span>
+            <h2>Let our experts help you!</h2>
+
+            <form>
+                <input type="text" placeholder="Your Full Name" autocomplete="name" required>
+                <input type="email" placeholder="Eg: myname@gmail.com" autocomplete="email" required>
+                <input type="tel" placeholder="10 digits" autocomplete="tel" required>
+                <input type="text" placeholder="6 digit PIN code" autocomplete="postal-code" required>
+
+                <div class="yes-no-question">
+                    <p>Have you started renovating your home?</p>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
+                </div>
+
+                <div class="yes-no-question">
+                    <p>Have you hired a local painter?</p>
+                    <button type="button" class="yesNo">Yes</button>
+                    <button type="button" class="yesNo">No</button>
+                </div>
+
+                <button type="submit" class="Book-free-site-submit">Book free site visit</button>
+            </form>
+        </div>
+    </div>
+
     <!-- footer code  -->
     <footer class="ahladafooter-main">
         <div class="container-fluid">
@@ -409,8 +440,7 @@
                                 class="fab fa-facebook-f"></i></a>
                         <a href="https://www.youtube.com/@SuryaDesignerStudio" target="_blank"><i
                                 class="fab fa-youtube"></i></a>
-                        <a href="https://wa.me/918019812939" target="_blank"><i
-                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/918019812939" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -418,6 +448,7 @@
     </footer>
 
 </body>
+<script src="js/contact.js"></script>
 <script src="js/index.js"></script>
 <script src="js/infra.js"></script>
 <script src="js/interior.js"></script>
